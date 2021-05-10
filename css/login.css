@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header2,.header3{
+    display: none;
+}
+.formHeader1{
+    text-align: center;
+}
+.header{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+.logo2{
+    margin-top: 25px;
+}
+
+.blueBar{
+    width: 100vw;
+    height: 20px;
+    background-color: #000080;
+}
+.formBox{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form{
+    height: 40%;
+    width:50%;
+    border: 1px solid gainsboro;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+
+}
+
+.form input{
+    height: 40px;
+    width: 250px;
+}
+
+.left1,.left2,.left3,.left4{
+  margin-top: 16.6px;;
+}
+
+.right1,.right2,.right3,.right4{
+    margin-top: 24.5px;
+    font-size: 18px;
+    text-align: left;
+
+}
+.right1 a{
+    text-decoration: none;
+    color: rgb(0, 108, 209);
+}
+.right2 button{
+    height: 15px ;
+    width: 15px;
+    font-size:12px ;
+    border-radius: 50%;
+    border: white;
+    background-color:rgb(92, 176, 255) ;
+    color:white ;
+    cursor: pointer;
+    
+}
+
+.right4{
+    display: flex;
+}
+
+.right4 button {
+    font-size: 15px;
+    display: flex;
+    background-color: rgb(230, 230, 230);
+   
+}
+
+.right4_1{
+   margin-top: 10px;
+   margin-left: 40px;
+}
+.right4_2{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.right4 img{
+    height: 20px ;
+    
+    width: 20px;
+}
+.right4 button,.left4 button{
+    height: 40px ;
+    width: 250px;
+    border: white;
+    cursor: pointer;
+    border-radius: 4px;
+   
+}
+.left4 button{
+    background-color: rgb(0, 105, 241);
+    color: white;
+    border: white;
+   font-size: 15px;
+}
+.formHeader{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+::placeholder {
+    padding: 0 0 0 10px;
+  }
+.formHeader1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 60px;
+    font-size: 30px;
+    border: 1px solid gainsboro;
+    background-color: rgb(240, 240, 240);
+}
+
+.left3 input{
+    height: 15px ;
+    width: 15px;
+}
+
+.endPage{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+.endPage a{
+    font-size: 16px;
+    font-weight: bolder;
+    color: rgb(0, 105, 241);
+}
+
+@media (max-width:1150px){
+    
+  .header,.blueBar{
+      display: none;
+  }
+  .header2{
+      display: block;
+  }
+  .header3{
+      display: flex;
+      flex-direction: row-reverse;
+  }
+  .formHeader1{
+      width: 70%;
+  }
+   .form{
+       width: 70%;
+       display: flex;
+       flex-direction: column;
+       justify-content: space-evenly;
+       align-items: center;
+   }
+   .formRight{
+       margin-left: 8vw;
+       position: relative;
+   }
+   
+
+  
+
+}
