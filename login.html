@@ -77,9 +77,9 @@
                <div class="right4_2">BITS Email Login</div>
                 </button>
             
-            
             </div>
-          
+            <br>
+            <div id="error-div" style="color:red;display:none;">!Error Use Bits Account Only!!</div>
         </div>
     </div>
   </div>
@@ -113,19 +113,29 @@
 </script>
 
 <script>
-
+   var flag=0; var mail;
+   var error=document.getElementById('error-div');
   document.getElementById('login-btn').addEventListener('click',GoogleLogin);
   let provider=new firebase.auth.GoogleAuthProvider();
   function GoogleLogin(){
       console.log('login-btn-clicked');
       firebase.auth().signInWithPopup(provider).then(res=>{
           console.log(res);
+          console.log(res.additionalUserInfo.profile.hd);
+          if(res.additionalUserInfo.profile.hd=="pilani.bits-pilani.ac.in")
+          {
+            window.location.href = "index.html";
+            error.style.display="none";
+          }
+          else{
+             error.style.display="block";
+          }
       }).catch(e=>{
           console.log(e);
+          flag=1;
       })
   }
 
-  
 </script>
  
 </body>
