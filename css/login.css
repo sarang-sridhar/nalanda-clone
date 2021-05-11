@@ -176,7 +176,12 @@
        margin-left: 8vw;
        position: relative;
    }
-   
+   .logo1 img{
+       width:90%;
+   }
+   .logo2 img{
+    width:90%;
+}
 
   
 

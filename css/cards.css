@@ -1,13 +1,39 @@
 .nalandaImg{
+   
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    position:relative;
+    top:100px;
+    margin-bottom:20px;
+}
+body{
+    margin:0;
+}
+.top-nav{
+    width:100%;
+    background-color:#353a40;
+    padding:5px 0px;
+    font-size:150%;
+    position:fixed;
+    top:0;
+    z-index:20;
+   
+
+
+}
+
+
+#nalanda{
+    color:white;
+    float:left;
+    text-decoration:none;
 }
 .recentlyAccessed{
     width: 60%;
     border: 1px solid rgb(185, 185, 185);
     padding: 10px 0;
-    margin: 50px auto;
+    margin: 50px 80px;
 }
 
 .header{
@@ -76,9 +102,54 @@
     padding: 10px 2px;
 }
 
+.top-nav{
+    width:100%;
+    background-color:#353a40;
+    padding:20px 0px 20px 0px;;
+    font-size:150%;
+    position:fixed;
+    top:0;
+    z-index:20;
+    margin-bottom:2%;
 
 
+}
+.main-content{
+    display:flex;
+    flex-direction:row;
+    margin-top: 80px;
+}
+.main-body-left{
+    width:40%;
+    
+    height:auto;
+    float:left;
+ 
+    margin-top:40px;
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
 
+}
+.main-body-left a{
+    text-decoration: none;
+    color:navy;
+
+}
+.main-body-left a:hover{
+    text-decoration: underline;
+}
+
+.main-body-left div{
+    background: rgb(250, 250, 250);
+    height:auto;
+    margin-bottom:4%;
+    padding:20px 10px;
+    border-radius:10px;
+    border:1 px solid gray;
+    font-size:120%;
+    font-family: 'Roboto', sans-serif;
+}
 .head0 button{
 
     height: 35px;
@@ -101,14 +172,14 @@
 
 .courseOverview{
     width: 60%;
-    margin: 10px auto;
+    margin: 10px 80px;
     font-family: 'Roboto', sans-serif;  
     font-size: 20px;
 }
 
 .courseFlexBox{
     width: 60%;
-    margin: 10px auto ;
+    margin: 10px 80px;
     border: 1px solid gainsboro;
     display: flex;
     flex-wrap: wrap;
@@ -215,7 +286,7 @@
     display: flex;
     width: 60%;
     flex-wrap: wrap;
-    margin: 1px auto;
+    margin: 1px 80px;
     justify-content: space-between;
 }
 
@@ -235,7 +306,7 @@
     display: flex;
     width: 60%;
     justify-content: space-between;
-    margin: 1px auto;
+    margin: 1px 80px;
     margin-bottom: 30px;
     flex-wrap: wrap;
 }
@@ -273,7 +344,7 @@
 
 .addRemove{
     width: 60%;
-    margin:10px auto;
+    margin:10px 80px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -304,7 +375,7 @@
 .makeAnnouncements{
     width: 60%;
     height: auto;
-    margin: 10px auto;
+    margin: 10px 80px;
 }
 
 #announcementInput{
@@ -317,6 +388,11 @@
 @media (max-width:850px){
     .nalandaImg{
         display: block;
+        margin-bottom:20px;
+    }
+    .nalandaImg  img {
+        width:90%;
+    
     }
     .bitsP{
         display: block;
@@ -328,5 +404,14 @@
     .nalanda{
         display: flex;
    flex-direction: row-reverse;
+    }
+    .main-content{
+        display:flex;
+        flex-direction:column;
+    }
+    .main-body-left{
+        margin-top:10px;
+        width:80%;
+        margin:2px auto;
     }
 }
