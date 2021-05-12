@@ -1,10 +1,12 @@
 body{
     margin:0;
-    
+    font-family: Arial, Helvetica, sans-serif;
 }
 a{
     text-decoration: none;
-    color:#5c98cc;
+    color:  blue;
+   font-family: Arial, Helvetica, sans-serif;
+
 }
 a:hover{
     text-decoration: underline;
@@ -32,6 +34,7 @@ a:hover{
     color:white;
     float:left;
     text-decoration:none;
+    font-family: ;
 }
 #log-in{
     color:white;
