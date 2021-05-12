@@ -2,6 +2,9 @@ body{
     margin:0;
     font-family: Arial, Helvetica, sans-serif;
 }
+*{
+box-sizing: border-box;
+}
 a{
     text-decoration: none;
     color:  blue;
@@ -34,7 +37,7 @@ a:hover{
     color:white;
     float:left;
     text-decoration:none;
-    font-family: ;
+    
 }
 #log-in{
     color:white;
@@ -116,7 +119,27 @@ a:hover{
     border:1px solid lightgrey;
     padding:20px 20px;
 }
+.main-body-right{
+    width:18%;
+    
+    height:auto;
+    float:right;
+    margin-left:2%;
+    margin-top:2%;
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
 
+}
+
+.main-body-right>div{
+    background:#f7f9fb;
+    height:auto;
+    margin-bottom:4%;
+    padding:20px 10px;
+    border-radius:5px;
+    border:1 px solid lightgray;
+}
 @media (max-width: 480px){
     .main-body{
         flex-direction:column;
