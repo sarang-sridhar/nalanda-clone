@@ -7,6 +7,14 @@
 
 
 
+
+.nalandaImg{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
 /* css for allbox */
 
 
@@ -541,4 +549,22 @@ cursor: pointer;
     }
 
     
+}
+
+
+@media (max-width:850px){
+    .nalandaImg{
+        display: block;
+    }
+    .bitsP{
+        display: block;
+    
+    }
+#locale{
+    display: block;
+}
+    .nalanda{
+        display: flex;
+   flex-direction: row-reverse;
+    }
 }
