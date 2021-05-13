@@ -4,6 +4,7 @@ let wrapper = document.getElementsByClassName('wrapper');
 
 
 let count =1 ; 
+let num =1 ; 
 
 
 sitePagesDropDown.addEventListener('click' , function(){
@@ -29,7 +30,7 @@ list[0].style.display = 'none';
 courseDropDown.addEventListener('click' , function(){
 
 
-    count+=1;
+    num+=1;
 
     if(count%2 ==0){
     list[0].style.display = 'none'
@@ -118,4 +119,38 @@ removeCourses.addEventListener('click' , function(){
 
 
 
+
+
+
+// making the announcement section
+
+
+
+
+
+let announceInput = document.getElementById('announceInput');
+
+
+let btnAnnounce =document.getElementById('makeAnncmnt');
+
+
+let chatListChild =document.getElementsByClassName('chatListChild');
+
+
+let t2 = document.getElementById('target2');
+
+
+
+let val = 0;
+
+btnAnnounce.addEventListener('click' , function(){
+
+    val+=1
+   
+    if(val!=0){
+        chatListChild[0].style.display = 'none';
+    }
+
+   t2.appendChild(announceInput.cloneNode(true));
+});
 
