@@ -20,6 +20,28 @@ sitePagesDropDown.addEventListener('click' , function(){
 
 
 
+// the course dropdown
+
+let courseDropDown = document.getElementById('course-dd');
+let list = document.getElementsByClassName('myCourseDropdown');
+list[0].style.display = 'none';
+
+courseDropDown.addEventListener('click' , function(){
+
+
+    count+=1;
+
+    if(count%2 ==0){
+    list[0].style.display = 'none'
+    }
+
+    else{
+        list[0].style.display = 'block'
+    }
+
+});
+
+
 
 // now main functionality of add and remove courses
 
@@ -29,7 +51,7 @@ const colorsArray =['linear-gradient(120deg,rgb(231, 255, 254),rgb(255, 142, 249
 
 
 
-
+let dynamicList=document.getElementById('cloneNameContainer');
 
 let t1 = document.getElementById('target1');
 
@@ -50,7 +72,10 @@ if (input1.value == 0 || input2.value == 0 ){
 
 else{
     let details = document.getElementById('textSem'); 
+
     let  courseName= document.getElementById('textCourse');
+
+    
     let cardToBeAdded = document.querySelector('#cloneToBe');
     let logoImage = document.getElementsByClassName('logoImg9');
 
@@ -62,14 +87,10 @@ else{
     logoImage[0].style.background = colorsArray[randomNumber];
 
     
-
-
-
-
     t1.appendChild(cardToBeAdded.cloneNode(true));
 
-    num +=1;
-    if(num>0){}
+    addElementToDynamicList();
+    
 }
 
 });
@@ -92,4 +113,9 @@ removeCourses.addEventListener('click' , function(){
   
 
 });
+
+
+
+
+
 
