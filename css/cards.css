@@ -49,6 +49,8 @@
     margin-top: 10px;
     padding: 0 6px;
 }
+
+
 #lb1Nav{
     font-size: 20px;
     margin-left: -10px;
@@ -72,6 +74,8 @@ cursor: pointer;
 }
 
 .myCourses{
+
+    margin-top: 10px;
     margin-left: 11px;
     cursor: pointer;
 }
@@ -358,6 +362,67 @@ cursor: pointer;
 
 
 
+
+
+
+/* for the announcement section */
+
+
+
+
+
+.announcementBox{
+    margin-top: 30px;
+    width: 100%;
+    padding: 10px;
+}
+
+.announceWrapper{
+   
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#chatList{
+    margin: 20px 0 0 20px;
+}
+
+
+
+#announceInput{
+    margin:10px 0;
+    height: 90px;
+    width: 90%;
+    padding: 10px;
+}
+
+::placeholder {
+    padding: 0 0 0 10px;
+  }
+
+
+
+  #makeAnnouncement{
+      width: 100%;
+   
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px 0;
+  }
+  #makeAnnouncement button{
+      width: 50%;
+      height: 40px;
+      background-color: rgb(211, 255, 211);
+      font-weight: bold;
+      outline:none;
+      border: white;
+
+      cursor: pointer;
+  }
+
+  
 /* right side */
 
 
@@ -444,6 +509,26 @@ cursor: pointer;
 
 
 
+.chatBox{
+    
+    padding: 10px;
+    margin-top: 20px;
+    width: 250px;
+    border: 1px solid gainsboro;
+}
+
+.icon{
+
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon i{
+    font-size: 50px;
+    color: rgb(200, 200, 200);
+}
 
 
 
@@ -494,7 +579,7 @@ cursor: pointer;
     }
 
 
-    .calendar , .upcomingEvents,.timeline {
+    .calendar , .upcomingEvents,.timeline,.chatBox {
         width: 100%;
     }
 
@@ -582,5 +667,12 @@ cursor: pointer;
     .nalanda{
         display: flex;
    flex-direction: row-reverse;
+    }
+
+    .footer1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
     }
 }
