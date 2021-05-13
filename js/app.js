@@ -65,6 +65,7 @@ btnAdd.addEventListener('click' , function(){
 
 let input1 = document.getElementById('input1');
 let input2 = document.getElementById('input2');
+let courseList=document.getElementById('course-dropdown');
 
 if (input1.value == 0 || input2.value == 0 ){
     alert('Enter The Course Name And Semester Details');
@@ -82,6 +83,11 @@ else{
 
     courseName.textContent = input1.value;
     details.textContent = input2.value;
+
+    var firstname = input1.value;
+    var entry = document.createElement('li');
+    entry.appendChild(document.createTextNode(firstname));
+    courseList.appendChild(entry);
    
     let randomNumber = fetchRandomNumber();
 
@@ -91,6 +97,8 @@ else{
     t1.appendChild(cardToBeAdded.cloneNode(true));
 
     addElementToDynamicList();
+   
+    
     
 }
 
