@@ -214,9 +214,27 @@ cursor: pointer;
 }
 
 
-.flexboxForCourses{
+#flexboxForCourses{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
+ justify-content: space-around;
+   
+ 
+   
+}
+#flexboxForCourses-2{
+    width: 100%;
+    display: none;
+    flex-wrap: wrap;
+ justify-content: space-around;
+   
+ 
+   
+}
+#flexboxForCourses-3{
+    width: 100%;
+    display: none;
     flex-wrap: wrap;
  justify-content: space-around;
    

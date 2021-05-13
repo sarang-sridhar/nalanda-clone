@@ -2,10 +2,37 @@ let sitePagesDropDown = document.getElementById('sitePages');
 
 let wrapper = document.getElementsByClassName('wrapper');
 
+var cardsdisp=document.getElementById('flexboxForCourses');
+var listdisp=document.getElementById('flexboxForCourses-2');
+var summarydisp=document.getElementById('flexboxForCourses-3');
+
+
 
 let count =1 ; 
 let num =1 ; 
-
+let dispcount=1;
+function change(x){
+console.log(x);
+if(x==1){
+    dispcount=1;
+    cardsdisp.style.display="flex";
+    listdisp.style.display="none";
+    summarydisp.style.display="none";
+}
+else if(x==2){
+    dispcount=2;
+    listdisp.style.display="flex";
+    cardsdisp.style.display="none";
+    
+    summarydisp.style.display="none";
+}
+else if(x==3){
+    dispcount=3;
+    cardsdisp.style.display="none";
+    listdisp.style.display="none";
+    summarydisp.style.display="flex";
+}
+}
 
 sitePagesDropDown.addEventListener('click' , function(){
 
@@ -53,7 +80,7 @@ const colorsArray =['linear-gradient(120deg,rgb(231, 255, 254),rgb(255, 142, 249
 
 
 let dynamicList=document.getElementById('cloneNameContainer');
-
+let t2 = document.getElementById('target2');
 let t1 = document.getElementById('target1');
 
 let btnAdd =document.getElementById('btn11');
@@ -96,7 +123,7 @@ else{
 
     
     t1.appendChild(cardToBeAdded.cloneNode(true));
-
+    t2.appendChild(cardToBeAdded.cloneNode(true));
     addElementToDynamicList();
    
     
@@ -146,7 +173,7 @@ let btnAnnounce =document.getElementById('makeAnncmnt');
 let chatListChild =document.getElementsByClassName('chatListChild');
 
 
-let t2 = document.getElementById('target2');
+
 
 
 
