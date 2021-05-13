@@ -67,6 +67,14 @@ cursor: pointer;
 #sitePages{
     margin-left:5px ;
 }
+
+
+.dynamicList{
+    font-size: 12px;
+    margin-top: 10px;
+    
+
+}
 .wrapper{
     display: none;
     margin-left: 5px;
