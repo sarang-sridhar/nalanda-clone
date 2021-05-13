@@ -7,19 +7,18 @@
 
 
 
-
 .nalandaImg{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-
 /* css for allbox */
 
 
 
 .allBox{
+    margin-top: 25px;
     display: flex;
     justify-content:flex-start;
 }
@@ -61,19 +60,11 @@
 i{
     margin-right: 5px;
 }
-#sitePages :hover{
+#sitePages{
 cursor: pointer;
 }
 #sitePages{
     margin-left:5px ;
-}
-
-
-.dynamicList{
-    font-size: 12px;
-    margin-top: 10px;
-    
-
 }
 .wrapper{
     display: none;
@@ -82,6 +73,7 @@ cursor: pointer;
 
 .myCourses{
     margin-left: 11px;
+    cursor: pointer;
 }
 
 
@@ -443,6 +435,17 @@ cursor: pointer;
     display: none;
 }
 
+.dynamicList{
+    font-size: 12px;
+    margin-top: 10px;
+    
+
+}
+
+
+
+
+
 
 @media (max-width:1150px){
         
@@ -504,6 +507,11 @@ cursor: pointer;
 
    
 }
+
+
+
+
+
 
 
 @media  (max-width:720px){
