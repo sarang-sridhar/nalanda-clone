@@ -87,6 +87,7 @@ else{
     var firstname = input1.value;
     var entry = document.createElement('li');
     entry.appendChild(document.createTextNode(firstname));
+    entry.style.fontSize="13px";
     courseList.appendChild(entry);
    
     let randomNumber = fetchRandomNumber();
