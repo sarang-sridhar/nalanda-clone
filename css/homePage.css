@@ -36,6 +36,7 @@ a:hover{
 #cal-div{
 height:173px;
 overflow:hidden;
+border:1px solid black;
 }
 #nalanda{
     color:white;
