@@ -7,7 +7,6 @@ var listdisp=document.getElementById('flexboxForCourses-2');
 var summarydisp=document.getElementById('flexboxForCourses-3');
 
 
-
 let count =1 ; 
 let num =1 ; 
 let dispcount=1;
@@ -80,7 +79,7 @@ const colorsArray =['linear-gradient(120deg,rgb(231, 255, 254),rgb(255, 142, 249
 
 
 let dynamicList=document.getElementById('cloneNameContainer');
-let t2 = document.getElementById('target2');
+
 let t1 = document.getElementById('target1');
 
 let btnAdd =document.getElementById('btn11');
@@ -121,9 +120,9 @@ else{
 
     logoImage[0].style.background = colorsArray[randomNumber];
 
-    
+    cardToBeAdded.classList.add('layer-v2');
     t1.appendChild(cardToBeAdded.cloneNode(true));
-    t2.appendChild(cardToBeAdded.cloneNode(true));
+    
     addElementToDynamicList();
    
     
@@ -178,7 +177,7 @@ let chatListChild =document.getElementsByClassName('chatListChild');
 
 
 let val = 0;
-
+let t2=document.getElementById('target2');
 btnAnnounce.addEventListener('click' , function(){
 
     val+=1
@@ -189,4 +188,5 @@ btnAnnounce.addEventListener('click' , function(){
 
    t2.appendChild(announceInput.cloneNode(true));
 });
+
 
