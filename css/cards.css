@@ -62,7 +62,7 @@
     float:right;
     font-weight:bold;
     z-index:60;
-    position:absolute;
+    position:fixed;
     top:50px;
     right:30px;
     font-size:120%;
