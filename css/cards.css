@@ -11,7 +11,6 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    
 }
 
 /* css for allbox */
@@ -19,7 +18,7 @@
 
 
 .allBox{
-    margin-top: 50px;
+    margin-top: 25px;
     display: flex;
     justify-content:flex-start;
 }
@@ -44,62 +43,6 @@
     border: 1px solid gainsboro;
     padding: 20px;
     
-}
-#top-nav{
-    width:100%;
-    background-color:#353a40;
-    padding:20px 0px 20px 0px;;
-    font-size:150%;
-    position:fixed;
-    top:0;
-    z-index:20;
-    margin-bottom:2%;
- 
-
-}
-#nav-dropdown{
-    color:black;border:4px solid gray;background:white;;width:fit-content;
-    float:right;
-    font-weight:bold;
-    z-index:60;
-    position:fixed;
-    top:50px;
-    right:30px;
-    font-size:120%;
-}
-#nav-dropdown a{
-    color:black;
-    text-decoration: none;
-    font-weight: bold;
-}
-#nav-dropdown div:hover{
-    background-color: blue;
-}
-#nalanda-of-nav{
-    color:white;
-    text-decoration:none;
-}
-#left-part{
-    float:right;
-    font-size:80%;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#left-part > div {
-    float: left;
-    padding:0px 10px;
-}
-#user-name{
-    color:white;
-    
-}
-#left-part div i {
-    color:white;
-    opacity:0.5;
-}
-#nalanda{
-    color:white;
-    text-decoration: none;
 }
 
 .lb1{
@@ -271,27 +214,9 @@ cursor: pointer;
 }
 
 
-#flexboxForCourses{
+.flexboxForCourses{
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
- justify-content: space-around;
-   
- 
-   
-}
-#flexboxForCourses-2{
-    width: 100%;
-    display: none;
-    flex-wrap: wrap;
- justify-content: space-around;
-   
- 
-   
-}
-#flexboxForCourses-3{
-    width: 100%;
-    display: none;
     flex-wrap: wrap;
  justify-content: space-around;
    
@@ -348,12 +273,30 @@ cursor: pointer;
     display: flex;
     flex-direction: column;
 }
+/* the dropdown feature */
+
+
+.dropdownForCards{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 20px;
+}
+.dropdownForCards select{
+    width: 80px;
+    height: 30px;
+}
+
+
+
+
+
 /* css for the center box also over now working on add courses feature */
 .layer{
     height: 180px;
     width: 270px;
     border: 1px solid gainsboro;
     text-align: center;
+    
      margin-top: 20px;
 }
 
@@ -418,6 +361,7 @@ cursor: pointer;
 /* styling the target element */
 
 #cloneToBe{
+
     margin-top: 20px;
     border: 1px solid gainsboro;
 }
@@ -750,10 +694,4 @@ cursor: pointer;
         align-items: center;
         flex-direction: column;
     }
-#nalanda-of-nav{
-    display:none;
-}
-img{
-    width:80%;
-}
 }
