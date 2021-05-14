@@ -187,6 +187,7 @@ btnAnnounce.addEventListener('click' , function(){
     }
 
    t2.appendChild(announceInput.cloneNode(true));
-});
+})
 
-
+document.getElementById('user-name').innerHTML=username;
+document.getElementById('user-pic').innerHTML=username[0];

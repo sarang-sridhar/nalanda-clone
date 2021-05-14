@@ -11,6 +11,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
 }
 
 /* css for allbox */
@@ -18,7 +19,7 @@
 
 
 .allBox{
-    margin-top: 25px;
+    margin-top: 90px;
     display: flex;
     justify-content:flex-start;
 }
@@ -43,6 +44,39 @@
     border: 1px solid gainsboro;
     padding: 20px;
     
+}
+#top-nav{
+    width:100%;
+    background-color:#353a40;
+    padding:20px 0px 20px 0px;;
+    font-size:150%;
+    position:fixed;
+    top:0;
+    z-index:20;
+    margin-bottom:2%;
+ 
+
+}
+#left-part{
+    float:right;
+
+}
+
+#left-part > div {
+    float: left;
+    padding:0px 10px;
+}
+#user-name{
+    color:white;
+    
+}
+#left-part div i {
+    color:white;
+    opacity:0.5;
+}
+#nalanda{
+    color:white;
+    text-decoration: none;
 }
 
 .lb1{

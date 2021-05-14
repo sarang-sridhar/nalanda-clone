@@ -94,7 +94,6 @@
   <div class="endPage">
       Login Help : <a href="#">Click Here</a>
     </div>
-    <script src="js/login.js"></script>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
 
@@ -102,48 +101,10 @@
      https://firebase.google.com/docs/web/setup#available-libraries -->
      <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-auth.js"></script>
 
-<script>
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  var firebaseConfig = {
-    apiKey: "AIzaSyApCei3TXqFTNtJhf84PM3h9XL58zZ_hx0",
-    authDomain: "nalanda-clone-de330.firebaseapp.com",
-    projectId: "nalanda-clone-de330",
-    storageBucket: "nalanda-clone-de330.appspot.com",
-    messagingSenderId: "146487373780",
-    appId: "1:146487373780:web:c6f91135330b443720f041",
-    measurementId: "G-Q7LQ8K0C2F"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
 
-</script>
 
-<script>
-   var flag=0; var mail;
-   var error=document.getElementById('error-div');
-  document.getElementById('login-btn').addEventListener('click',GoogleLogin);
-  let provider=new firebase.auth.GoogleAuthProvider();
-  function GoogleLogin(){
-      console.log('login-btn-clicked');
-      firebase.auth().signInWithPopup(provider).then(res=>{
-          console.log(res);
-          console.log(res.additionalUserInfo.profile.hd);
-          if(res.additionalUserInfo.profile.hd=="pilani.bits-pilani.ac.in")
-          {
-            window.location.href = "cards.html";
-            error.style.display="none";
-          }
-          else{
-             error.style.display="block";
-          }
-      }).catch(e=>{
-          console.log(e);
-          flag=1;
-      })
-  }
 
-</script>
  
+<script src="js/login.js"></script>
 </body>
 </html>
