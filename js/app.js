@@ -1,43 +1,11 @@
-var username=sessionStorage.getItem("username");
-
-document.getElementById('user-name').innerHTML=username;
-document.getElementById('user-pic').innerHTML=username[0];
-
-
 let sitePagesDropDown = document.getElementById('sitePages');
 
 let wrapper = document.getElementsByClassName('wrapper');
 
-var cardsdisp=document.getElementById('flexboxForCourses');
-var listdisp=document.getElementById('flexboxForCourses-2');
-var summarydisp=document.getElementById('flexboxForCourses-3');
-
 
 let count =1 ; 
 let num =1 ; 
-let dispcount=1;
-function change(x){
-console.log(x);
-if(x==1){
-    dispcount=1;
-    cardsdisp.style.display="flex";
-    listdisp.style.display="none";
-    summarydisp.style.display="none";
-}
-else if(x==2){
-    dispcount=2;
-    listdisp.style.display="flex";
-    cardsdisp.style.display="none";
-    
-    summarydisp.style.display="none";
-}
-else if(x==3){
-    dispcount=3;
-    cardsdisp.style.display="none";
-    listdisp.style.display="none";
-    summarydisp.style.display="flex";
-}
-}
+
 
 sitePagesDropDown.addEventListener('click' , function(){
 
@@ -97,7 +65,6 @@ btnAdd.addEventListener('click' , function(){
 
 let input1 = document.getElementById('input1');
 let input2 = document.getElementById('input2');
-let courseList=document.getElementById('course-dropdown');
 
 if (input1.value == 0 || input2.value == 0 ){
     alert('Enter The Course Name And Semester Details');
@@ -115,23 +82,15 @@ else{
 
     courseName.textContent = input1.value;
     details.textContent = input2.value;
-
-    var firstname = input1.value;
-    var entry = document.createElement('li');
-    entry.appendChild(document.createTextNode(firstname));
-    entry.style.fontSize="13px";
-    courseList.appendChild(entry);
    
     let randomNumber = fetchRandomNumber();
 
     logoImage[0].style.background = colorsArray[randomNumber];
 
-    cardToBeAdded.classList.add('layer-v2');
+    
     t1.appendChild(cardToBeAdded.cloneNode(true));
-    
-    addElementToDynamicList();
-   
-    
+
+    // addElementToDynamicList();
     
 }
 
@@ -169,45 +128,32 @@ removeCourses.addEventListener('click' , function(){
 
 
 
-let announceInput = document.getElementById('announceInput');
+// let announceInput = document.getElementById('announceInput');
 
 
-let btnAnnounce =document.getElementById('makeAnncmnt');
+// let btnAnnounce =document.getElementById('makeAnncmnt');
 
 
-let chatListChild =document.getElementsByClassName('chatListChild');
+// let chatListChild =document.getElementsByClassName('chatListChild');
+
+
+// let t2 = document.getElementById('target2');
 
 
 
+// let val = 0;
 
+// btnAnnounce.addEventListener('click' , function(){
 
-
-let val = 0;
-let t2=document.getElementById('target2');
-btnAnnounce.addEventListener('click' , function(){
-
-    val+=1
+//     val+=1
    
-    if(val!=0){
-        chatListChild[0].style.display = 'none';
-    }
+//     if(val!=0){
+//         chatListChild[0].style.display = 'none';
+//     }
 
-   t2.appendChild(announceInput.cloneNode(true));
-})
+//    t2.appendChild(announceInput.cloneNode(true));
+// });
 
-var count5=0;
-var x=document.getElementById('nav-dropdown');
-
-function navDrop(){
-    if(count5==0){
-        x.style.display="block";
-        count5=1;
-    }
-    else{
-        x.style.display="none";
-        count5=0;
-    }
-}
 
 
 
