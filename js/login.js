@@ -1,4 +1,7 @@
 var username;
+var res;
+var username2;
+
 
 // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -18,13 +21,16 @@ var username;
   document.getElementById('login-btn').addEventListener('click',GoogleLogin);
   let provider=new firebase.auth.GoogleAuthProvider();
   function GoogleLogin(){
-      console.log('login-btn-clicked');
+      //console.log('login-btn-clicked');
       
       firebase.auth().signInWithPopup(provider).then(res=>{
-          console.log(res);
-          console.log(res.additionalUserInfo.profile.hd);
-          username=res.additionalUserInfo.profile.name;
+          //console.log(res);
+          //console.log(res.additionalUserInfo.profile.hd);
+          username= res.additionalUserInfo.profile.name;
           console.log(username);
+          sessionStorage.setItem("username",username)
+         
+         
           if(res.additionalUserInfo.profile.hd=="pilani.bits-pilani.ac.in")
           {
             window.location.href = "cards.html";
@@ -38,6 +44,7 @@ var username;
           flag=1;
       })
   }
+ 
 
 
 

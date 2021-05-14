@@ -1,3 +1,9 @@
+var username=sessionStorage.getItem("username");
+
+document.getElementById('user-name').innerHTML=username;
+document.getElementById('user-pic').innerHTML=username[0];
+
+
 let sitePagesDropDown = document.getElementById('sitePages');
 
 let wrapper = document.getElementsByClassName('wrapper');
@@ -189,5 +195,4 @@ btnAnnounce.addEventListener('click' , function(){
    t2.appendChild(announceInput.cloneNode(true));
 })
 
-document.getElementById('user-name').innerHTML=username;
-document.getElementById('user-pic').innerHTML=username[0];
+
