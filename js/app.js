@@ -208,3 +208,147 @@ function navDrop(){
         count5=0;
     }
 }
+
+
+
+
+
+
+// for the dropdown feature
+
+
+
+let dropcourse1 =document.getElementById('dropcourse1');
+
+let dropcourse2 =document.getElementById('dropcourse2');
+
+let layer = document.getElementsByClassName('layer');
+
+let logoImgCommon = document.getElementsByClassName('logoImgCommon');
+
+let inputSem = document.getElementsByClassName('inputSem');
+
+let inputName = document.getElementsByClassName('inputName');
+
+let cloneToBe = document.getElementById('cloneToBe');
+
+let logoImg9 = document.getElementsByClassName('logoImg9');
+
+let layer7 = document.getElementsByClassName('layer7');
+
+
+
+
+let counter = 1;
+
+dropcourse2.addEventListener('click' , function(){
+
+
+    counter+=1;
+    if(counter%2==0){
+    for(let i =0 ;i<layer.length ;i++){
+        layer[i].style.width = '100%';
+        layer[i].style.height = '100px';
+        layer[i].style.padding = '20px';
+        layer[i].style.display = 'flex';
+        layer[i].style.justifyContent = 'flex-start';
+        layer[i].style.alignItems = 'center';
+    }
+
+
+    for(let i= 0 ; i<logoImgCommon.length ; i++){
+
+        logoImgCommon[i].style.height = '50px';
+        logoImgCommon[i].style.width = '50px';
+        logoImgCommon[i].style.borderRadius = '1000000%';
+        logoImgCommon[i].style.marginRight = '10%';
+
+
+    }
+
+    for(let i=0; i<inputName.length ; i++){
+
+        inputName[i].style.marginRight= '5%';
+        inputSem[i].style.marginRight= '5%';
+
+    }
+
+    cloneToBe.style.width = '100%';
+    cloneToBe.style.height = '100px';
+    cloneToBe.style.padding = '20px';
+    cloneToBe.style.display = 'flex'
+    cloneToBe.style.justifyContent = 'flex-start';
+    cloneToBe.style.alignItems = 'center';
+    cloneToBe.style.border = '1px solid gainsboro';
+    
+
+    layer7[0].style.display='none';
+}
+
+});
+
+
+
+
+dropcourse1.addEventListener('click' , function(){
+
+counter+=1;
+
+if(counter%2!=0){
+ for(let i =0 ;i<layer.length ;i++){
+        layer[i].style.width = '270px';
+        layer[i].style.height = '180px';
+        layer[i].style.padding = '0px';
+        layer[i].style.display = 'block';
+     
+        // layer[i].style.width = '100%';
+        // layer[i].style.height = '100px';
+        // layer[i].style.padding = '20px';
+        // layer[i].style.display = 'flex';
+        // layer[i].style.justifyContent = 'flex-start';
+        // layer[i].style.alignItems = 'center';
+    }
+
+
+    for(let i= 0 ; i<logoImgCommon.length ; i++){
+
+        logoImgCommon[i].style.height = '130px';
+        logoImgCommon[i].style.width = '270px';
+        logoImgCommon[i].style.borderRadius = '0%';
+        logoImgCommon[i].style.marginRight = '0%';
+
+
+        // logoImgCommon[i].style.height = '50px';
+        // logoImgCommon[i].style.width = '50px';
+        // logoImgCommon[i].style.borderRadius = '1000000%';
+        // logoImgCommon[i].style.marginRight = '10%';
+    }
+
+
+    cloneToBe.style.width = '270px';
+    cloneToBe.style.height = '180px';
+    cloneToBe.style.padding = '0';
+    cloneToBe.style.display = 'block'
+    cloneToBe.style.border = '1px solid gainsboro';
+  
+
+
+    cloneToBe.style.width = '100%';
+    cloneToBe.style.height = '100px';
+    cloneToBe.style.padding = '20px';
+    cloneToBe.style.display = 'flex'
+    cloneToBe.style.justifyContent = 'flex-start';
+    cloneToBe.style.alignItems = 'center';
+    cloneToBe.style.border = '1px solid gainsboro';
+
+    for(let i=0; i<inputName.length ; i++){
+
+        inputName[i].style.marginRight= '0%';
+        inputSem[i].style.marginRight= '0%';
+
+    }
+    layer7[0].style.display='none';
+
+
+}
+});
