@@ -195,4 +195,16 @@ btnAnnounce.addEventListener('click' , function(){
    t2.appendChild(announceInput.cloneNode(true));
 })
 
+var count5=0;
+var x=document.getElementById('nav-dropdown');
 
+function navDrop(){
+    if(count5==0){
+        x.style.display="block";
+        count5=1;
+    }
+    else{
+        x.style.display="none";
+        count5=0;
+    }
+}
