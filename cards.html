@@ -50,7 +50,7 @@
     </div>
 
 
-    <div class="allBox">
+ <div class="allBox">
 
 
         <div class="leftBox">
@@ -83,14 +83,14 @@
                     <div id="course-dd"> <i class="fas fa-angle-down"></i>My Courses</div>
 
 
-                    <ul class="myCourseDropdown" id="course-dropdown">
+                    <ul class="myCourseDropdown">
                         <li class="dynamicList">GENERAL CHEMISTRY</li>
                         <li class="dynamicList">ADVANCED CALCULUS</li>
                         <li class="dynamicList">ELECTRICAL SCIENCES</li>
                         <li class="dynamicList">C PROGRAMMING</li>
                         <li class="dynamicList">GENERAL BIOLOGY</li>
                         <li class="dynamicList">ENGINEERING GRAPHICS</li>
-                       
+                        <li class="dynamicList" id="cloneNameContainer"></li>
                      </ul> 
                 </div>
 
@@ -234,27 +234,35 @@
 
                 <div class="courseHeader">
 
-                    Course overview 
+                    Course overview
                 </div>
+
+
+
                
-                <div class="tlDiv2" style="float:right; margin-right:2%;">
-                
-                    <div class="ddcbtn1">
+
+                    <div class="dropdownForCards">
+                    
+                        <div class="ddcbtn1">
                             <button id="dropcourse1">CARDS VIEW</button>
                         </div>
                         <div class="ddcbtn2">
                             <button id="dropcourse2">LIST VIEW</button>
                         </div>
-                    
-                </div>
+
+                    </div>
 
 
-                <div id="flexboxForCourses">
+               
 
-                    <!-- IN CARDS MODE-->
-                    
+
+                <div class="flexboxForCourses">
+
+
+
                     <div class="layer1 layer">
-                        
+                      
+                       
                         <div class="logoImg3 logoImgCommon"></div>
                         <div class="inputSem">
                             II SEM 2020-2021 (March SEM)
@@ -263,6 +271,7 @@
                         <div class="inputName">
                             GENERAL CHEMISTRY
                         </div>
+                       
                     </div>
                     <div class="layer2 layer">
                         <div class="logoImg4 logoImgCommon"></div>
@@ -324,14 +333,14 @@
                         </div>
                     </div>
 
-                    <div id="target1">
+                    <div id="target1" >
 
                     </div>
-                </div>
-                 <!--END CARDS MODE-->
-                   
 
-                
+
+
+
+                </div>
 
                 <div class="footer">
 
@@ -434,6 +443,7 @@
                         <select id="cal-dd2">
                             <option>Sort By Dates</option>
                             <option>Sort By Time</option>
+
                         </select>
                     </div>
 
