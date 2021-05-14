@@ -1,3 +1,10 @@
+var username=sessionStorage.getItem("username");
+
+document.getElementById('user-name').innerHTML=username;
+document.getElementById('user-pic').innerHTML=username[0];
+
+
+
 let sitePagesDropDown = document.getElementById('sitePages');
 
 let wrapper = document.getElementsByClassName('wrapper');
@@ -298,3 +305,22 @@ if(counter%2!=0){
 
 }
 });
+
+
+var count5=0;
+var x=document.getElementById('nav-dropdown');
+
+function navDrop(){
+    if(count5==0){
+        x.style.display="block";
+        count5=1;
+        
+    }
+    else{
+        x.style.display="none";
+        count5=0;
+    }
+}
+
+
+
