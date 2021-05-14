@@ -34,9 +34,9 @@ a:hover{
     margin-top:5%;
 }
 #cal-div{
-height:280px;
+height:auto;
 width: 300px;
-overflow:hidden;
+
 /* border:1px solid black; */
 }
 #nalanda{
