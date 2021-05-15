@@ -194,9 +194,9 @@ let layer7 = document.getElementsByClassName('layer7');
 
 let counter = 1;
 
-dropcourse2.addEventListener('click' , function(){
+function viewDropdown(x){
 
-    
+    if(x==2){
     counter+=1;
     if(counter%2==0){
     for(let i =0 ;i<layer.length ;i++){
@@ -236,15 +236,11 @@ dropcourse2.addEventListener('click' , function(){
     
 
     layer7[0].style.display='none';
-}
-
-});
-
+    }
+ }
 
 
-
-dropcourse1.addEventListener('click' , function(){
-
+else if(x==1){
 counter+=1;
 
 if(counter%2!=0){
@@ -302,9 +298,9 @@ if(counter%2!=0){
     }
     layer7[0].style.display='none';
 
-
 }
-});
+}
+}
 
 
 var count5=0;

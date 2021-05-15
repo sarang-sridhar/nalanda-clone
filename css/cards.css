@@ -17,6 +17,9 @@
  
 
 }
+#cards-dd{
+    width:fit-content;
+}
 #nav-dropdown{
     color:black;border:4px solid gray;background:white;;width:fit-content;
     float:right;
