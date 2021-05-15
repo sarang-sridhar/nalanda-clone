@@ -1,6 +1,7 @@
 var username;
 var res;
 var username2;
+var userpic;
 
 
 // Your web app's Firebase configuration
@@ -24,14 +25,16 @@ var username2;
       //console.log('login-btn-clicked');
       
       firebase.auth().signInWithPopup(provider).then(res=>{
-          //console.log(res);
+          console.log(res);
           //console.log(res.additionalUserInfo.profile.hd);
           username= res.additionalUserInfo.profile.name;
-          console.log(username);
-          sessionStorage.setItem("username",username)
+          userpic== res.additionalUserInfo.profile.picture;
+          //console.log(username);
+          sessionStorage.setItem("username",username);
+          sessionStorage.setItem("userpic",userpic);
          
          
-          if(res.additionalUserInfo.profile.hd=="pilani.bits-pilani.ac.in")
+         if(res.additionalUserInfo.profile.hd=="pilani.bits-pilani.ac.in")
           {
             window.location.href = "cards.html";
             error.style.display="none";

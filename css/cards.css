@@ -57,6 +57,10 @@
     color:white;
     
 }
+#user-pic{
+    width:30px;height:30px;border-radius:50%;background-size:contain;background-repeat:no-repeat;color:white;font-weight:bold;text-align: center;padding:2px;
+    background-color: orangered;
+}
 .nalandaImg{
     display: flex;
     flex-wrap: wrap;

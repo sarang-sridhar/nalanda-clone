@@ -1,7 +1,7 @@
 var username=sessionStorage.getItem("username");
-
+var userpic=sessionStorage.getItem("userpic");
 document.getElementById('user-name').innerHTML=username;
-document.getElementById('user-pic').innerHTML=username[0];
+document.getElementById('user-pic').style.backgroundImage="url('"+userpic+"')";
 
 
 
