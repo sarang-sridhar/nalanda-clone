@@ -28,7 +28,7 @@ var userpic;
           console.log(res);
           //console.log(res.additionalUserInfo.profile.hd);
           username= res.additionalUserInfo.profile.name;
-          userpic== res.additionalUserInfo.profile.picture;
+          userpic= res.additionalUserInfo.profile.picture;
           //console.log(username);
           sessionStorage.setItem("username",username);
           sessionStorage.setItem("userpic",userpic);
