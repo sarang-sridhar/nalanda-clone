@@ -318,45 +318,6 @@ cursor: pointer;
 
 
 
-.onClickOfCard{
-    width: 96%;
-    padding: 20px;
-    margin: 20px auto;
-    border: 1px solid gainsboro;
-    display: none;
-    color: rgb(8, 87, 151);
-}
-.onClickOfCard hr{
-    color: rgb(180, 180, 180);
-}
-
-
-.onccWrapper{
-    display: flex;
-    justify-content: space-between;
-    margin-top:10px;
-}
-
-#goBackToMainPage{
-    height: 30px;
-    width: 100px;
-    outline: none;
-    cursor: pointer;
-    border: 1px solid #ffffff;
-    background-color: rgb(240, 240, 240);
-    font: 20px;
-    font-weight: bold;
-}
-.oncc{
-
-    margin: 20px 2px;
-
-
-}
-
-.oncc h2:hover{
-    text-decoration: underline;
-}
 
 
 
@@ -645,6 +606,47 @@ cursor: pointer;
     color: rgb(200, 200, 200);
 }
 
+
+
+.onClickOfCard{
+    width: 96%;
+    padding: 20px;
+    margin: 20px auto;
+    border: 1px solid gainsboro;
+    display: none;
+    color: rgb(8, 87, 151);
+}
+.onClickOfCard hr{
+    color: rgb(180, 180, 180);
+}
+
+
+.onccWrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top:10px;
+}
+
+#goBackToMainPage{
+    height: 30px;
+    width: 100px;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #ffffff;
+    background-color: rgb(240, 240, 240);
+    font: 20px;
+    font-weight: bold;
+}
+.oncc{
+
+    margin: 20px 2px;
+
+
+}
+
+.oncc h2:hover{
+    text-decoration: underline;
+}
 
 
 @media (max-width:1150px){
