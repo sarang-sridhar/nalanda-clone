@@ -30,6 +30,7 @@ var userpic;
           username= res.additionalUserInfo.profile.name;
           userpic= res.additionalUserInfo.profile.picture;
           //console.log(username);
+          console.log(userpic);
           sessionStorage.setItem("username",username);
           sessionStorage.setItem("userpic",userpic);
          
