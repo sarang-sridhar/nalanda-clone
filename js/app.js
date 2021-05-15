@@ -68,7 +68,7 @@ let btnAdd =document.getElementById('btn11');
 btnAdd.addEventListener('click' , function(){
 
 
-
+var abcd=0;
 
 let input1 = document.getElementById('input1');
 let input2 = document.getElementById('input2');
@@ -93,8 +93,8 @@ else{
     let randomNumber = fetchRandomNumber();
 
     logoImage[0].style.background = colorsArray[randomNumber];
+   
     cardToBeAdded.classList.add('layer');
-    
     t1.appendChild(cardToBeAdded.cloneNode(true));
 
     // addElementToDynamicList();
@@ -197,6 +197,7 @@ let counter = 1;
 function viewDropdown(x){
 
     if(x==2){
+    
     counter+=1;
     if(counter%2==0){
     for(let i =0 ;i<layer.length ;i++){
@@ -282,13 +283,6 @@ if(counter%2!=0){
   
 
 
-    cloneToBe.style.width = '100%';
-    cloneToBe.style.height = '100px';
-    cloneToBe.style.padding = '20px';
-    cloneToBe.style.display = 'flex'
-    cloneToBe.style.justifyContent = 'flex-start';
-    cloneToBe.style.alignItems = 'center';
-    cloneToBe.style.border = '1px solid gainsboro';
 
     for(let i=0; i<inputName.length ; i++){
 
