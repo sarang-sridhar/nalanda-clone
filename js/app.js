@@ -93,7 +93,7 @@ else{
     let randomNumber = fetchRandomNumber();
 
     logoImage[0].style.background = colorsArray[randomNumber];
-
+    cardToBeAdded.classList.add('layer');
     
     t1.appendChild(cardToBeAdded.cloneNode(true));
 
@@ -196,7 +196,7 @@ let counter = 1;
 
 dropcourse2.addEventListener('click' , function(){
 
-
+    
     counter+=1;
     if(counter%2==0){
     for(let i =0 ;i<layer.length ;i++){
