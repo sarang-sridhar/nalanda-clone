@@ -758,15 +758,34 @@ width: 300px;
         align-items: center;
     }
 
-
-    .logoImg1 , .logoImg2{
-        width: 260px;
+    .courseCard{
+        margin:20px 0;
     }
 
-    .logoImg3,.logoImg4,.logoImg5,.logoImg6,.logoImg7,.logoImg8.logoImg9{
-        width: 265px;
+
+    .logoImg1 , .logoImg2, .logoImg3,.logoImg4,.logoImg5,.logoImg6,.logoImg7,.logoImg8,.logoImg9{
+        width: 308px;
+        margin:0px auto;
     }
 
+    .leftBox , .rightBox{
+
+        width:95%;
+
+
+    }
+
+    .centerContainer{
+        width: 95%;
+    }
+
+    .recentConatainer{
+        margin: 10px auto;
+    }
+
+    .layer , .courseCard{
+        width: 310px;
+    }
     
 }
 

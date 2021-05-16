@@ -66,7 +66,7 @@ let t1 = document.getElementById('target1');
 let btnAdd =document.getElementById('btn11');
 
 btnAdd.addEventListener('click' , function(){
-
+    
 
 var abcd=0;
 
@@ -90,7 +90,14 @@ else{
     courseName.textContent = input1.value;
     details.textContent = input2.value;
    
+//add element to course dropdown
+    var firstname = input1.value;
+var entry = document.createElement('li');
+entry.appendChild(document.createTextNode(firstname));
+entry.classList.add('dynamicList');
+list[0].appendChild(entry);
     let randomNumber = fetchRandomNumber();
+//--------------------------------------
 
     logoImage[0].style.background = colorsArray[randomNumber];
    
@@ -116,6 +123,7 @@ removeCourses.addEventListener('click' , function(){
 
     // console.log(t1.childNodes.length);
     t1.removeChild(t1.childNodes[t1.childNodes.length-1]);
+    list[0].removeChild(list[0].childNodes[list[0].childNodes.length-1]);
   
 
   
@@ -135,31 +143,31 @@ removeCourses.addEventListener('click' , function(){
 
 
 
-// let announceInput = document.getElementById('announceInput');
+ let announceInput = document.getElementById('announceInput');
 
 
-// let btnAnnounce =document.getElementById('makeAnncmnt');
+ let btnAnnounce =document.getElementById('makeAnncmnt');
 
 
-// let chatListChild =document.getElementsByClassName('chatListChild');
+ let chatListChild =document.getElementsByClassName('chatListChild');
 
 
-// let t2 = document.getElementById('target2');
+let t2 = document.getElementById('target2');
 
 
 
-// let val = 0;
+ let val = 0;
 
-// btnAnnounce.addEventListener('click' , function(){
+ btnAnnounce.addEventListener('click' , function(){
 
-//     val+=1
+     val+=1
    
-//     if(val!=0){
-//         chatListChild[0].style.display = 'none';
-//     }
+     if(val!=0){
+         chatListChild[0].style.display = 'none';
+     }
 
-//    t2.appendChild(announceInput.cloneNode(true));
-// });
+    t2.appendChild(announceInput.cloneNode(true));
+ });
 
 
 
