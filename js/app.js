@@ -11,7 +11,7 @@ let wrapper = document.getElementsByClassName('wrapper');
 
 
 let count =1 ; 
-let num =1 ; 
+let num =0 ; 
 
 
 sitePagesDropDown.addEventListener('click' , function(){
@@ -38,15 +38,13 @@ courseDropDown.addEventListener('click' , function(){
 
 
     num+=1;
-
-    if(count%2 ==0){
-    list[0].style.display = 'none'
+    
+    if(num%2 ==0){
+    list[0].style.display = 'none';
     }
-
     else{
-        list[0].style.display = 'block'
+        list[0].style.display = 'block';
     }
-
 });
 
 
