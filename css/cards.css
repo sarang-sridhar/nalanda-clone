@@ -509,10 +509,11 @@ cursor: pointer;
 
 
 .cale{
-    margin-bottom: 20px  ;
+    margin:20px auto;
     padding: 10px;
     border: 1px solid gainsboro;
-    width: 320px;
+    width: 290px;
+    
 }
 
 .coverMeUp{
@@ -522,14 +523,14 @@ cursor: pointer;
     background-color: white;
     overflow: hidden; */
     height: 300px;
-width: 300px;
+    width: 300px;
 
    
 }
 .upcomingEvents{
     border: 1px solid gainsboro;
     padding: 10px;
-    width: 320px;
+    width: 290px;
 }
 #ueHead{
     margin: 10px 0;
@@ -539,7 +540,7 @@ width: 300px;
     padding: 10px;
     border: 1px solid gainsboro;
     margin-top: 20px;
-    width: 320px;
+    width: 290px;
 }
 
 .tlDiv{
