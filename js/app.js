@@ -388,5 +388,11 @@ goBackToMainPage.addEventListener('click' , function(){
 
 });
 
-//test
+//fixing the calendar 
+
+
+let calendar = document.getElementsByClassName('calendar');
+
+calendar[0].style.transform = 'scaleX(0.8)';
+
 
