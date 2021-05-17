@@ -501,7 +501,7 @@ cursor: pointer;
 
 .rightBox{
     width: 20%;
-    margin-top: 20px;
+    margin-top: 0px;
     margin-right: 20px;
     display: flex;
     flex-direction: column;
