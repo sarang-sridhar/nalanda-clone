@@ -4,6 +4,11 @@ document.getElementById('user-name').innerHTML=username;
 document.getElementById('user-pic').style.backgroundImage="url('"+userpic+"')";
 
 
+/////////////for course component dropdown later in code
+let dynlist=document.getElementsByClassName('dynamicList');
+
+let coursecomp=document.getElementsByClassName('course-components');
+////////////
 
 let sitePagesDropDown = document.getElementById('sitePages');
 
@@ -89,14 +94,83 @@ else{
     details.textContent = input2.value;
    
 //add element to course dropdown
-    var firstname = input1.value;
-var entry = document.createElement('li');
-entry.appendChild(document.createTextNode(firstname));
-entry.classList.add('dynamicList');
-list[0].appendChild(entry);
-    let randomNumber = fetchRandomNumber();
-//--------------------------------------
+    let firstname = input1.value;
+let entry = document.createElement('li');
+entry.innerText=firstname;
 
+entry.classList.add('dynamicList');
+
+let entry2 = document.createElement('ul');
+
+let entry3 = document.createElement('li');
+/////
+////
+entry3.innerText="participants";
+entry2.appendChild(entry3);
+let entry4= document.createElement('li');
+entry4.innerText="badges";
+entry2.appendChild(entry4);
+let entry5= document.createElement('li');
+entry5.innerText="Competencies";
+entry2.appendChild(entry5);
+let entry6= document.createElement('li');
+entry6.innerText="Grades";
+entry2.appendChild(entry6);
+let entry7= document.createElement('li');
+entry7.innerText="Notice Section";
+entry2.appendChild(entry7);
+let entry8= document.createElement('li');
+entry8.innerText="OnlineQuiz";
+entry2.appendChild(entry8);
+let entry9= document.createElement('li');
+entry9.innerText="Assignment";
+entry2.appendChild(entry9);
+let entry10= document.createElement('li');
+entry10.innerText="Lecture-1";
+entry2.appendChild(entry10);
+let entry11= document.createElement('li');
+entry11.innerText="lecture-2";
+entry2.appendChild(entry11);
+let entry12= document.createElement('li');
+entry12.innerText="lecture-3";
+entry2.appendChild(entry12);
+let entry13= document.createElement('li');
+entry13.innerText="lecture-4";
+entry2.appendChild(entry13);
+let entry14= document.createElement('li');
+entry14.innerText="lecture-5";
+entry2.appendChild(entry14);
+let entry15= document.createElement('li');
+entry15.innerText="lecture-6";
+entry2.appendChild(entry15);
+let entry16= document.createElement('li');
+entry16.innerText="lecture-7";
+entry2.appendChild(entry16);
+let entry17= document.createElement('li');
+entry17.innerText="lecture-8";
+entry2.appendChild(entry17);
+let entry18= document.createElement('li');
+entry18.innerText="lecture-9";
+entry2.appendChild(entry18);
+let entry19= document.createElement('li');
+entry19.innerText="lecture-10";
+entry2.appendChild(entry19);
+//////
+///////
+///////
+entry2.classList.add('course-components');
+entry2.style.display="none";
+entry.appendChild(entry2);
+entry.addEventListener("click",function(){
+        
+    entry2.style.display="block";
+  
+})
+list[0].appendChild(entry);
+
+    
+//--------------------------------------
+let randomNumber = fetchRandomNumber();
     logoImage[0].style.background = colorsArray[randomNumber];
    
     cardToBeAdded.classList.add('layer');
@@ -352,6 +426,9 @@ for(let i=0 ; i<layer.length;i++){
         containerForTopMenu[0].style.display = 'flex';
 
         topMenu3.innerText = inputName[i].textContent;
+
+        coursecomp[i].style.display="block";
+        sessionStorage.setItem("cardthatisclicked",i);
         
 } );
 
@@ -379,6 +456,10 @@ for(let i= 0 ; i<courseCard.length ; i++){
         containerForTopMenu[0].style.display = 'flex';
 
         topMenu3.innerText = courseNameOnCard[i].innerText;
+       
+
+        
+
         
 } );
 
@@ -405,6 +486,9 @@ goBackToMainPage.addEventListener('click' , function(){
     containerForTopMenu[0].style.display = 'none';
 
     topMenu3.innerText = ' ';
+    pqrs=sessionStorage.getItem("cardthatisclicked");
+    coursecomp[pqrs].style.display="none";
+    
 
 });
 
@@ -420,4 +504,20 @@ let calendar = document.getElementsByClassName('calendar');
 
 calendar[0].style.transform = 'scaleX(0.8)';
 
+//for the course componenets to drop down
+//////////////
 
+console.log(dynlist);
+console.log(coursecomp);
+let coursecount;
+for(let k=0;k<dynlist.length;k++){
+    
+   
+    dynlist[k].addEventListener("click",function(){
+        
+        coursecomp[k].style.display="block";
+       coursecount[k]=1;
+    })
+
+}
+////////////
