@@ -174,6 +174,8 @@ let randomNumber = fetchRandomNumber();
     logoImage[0].style.background = colorsArray[randomNumber];
    
     cardToBeAdded.classList.add('layer');
+
+
     t1.appendChild(cardToBeAdded.cloneNode(true));
 
     // addElementToDynamicList();
@@ -426,7 +428,9 @@ for(let i=0 ; i<layer.length;i++){
         containerForTopMenu[0].style.display = 'flex';
 
         topMenu3.innerText = inputName[i].textContent;
-
+        for(let j=0;j<dynlist.length;j++){
+            coursecomp[j].style.display="none";
+        }
         coursecomp[i].style.display="block";
         sessionStorage.setItem("cardthatisclicked",i);
         
@@ -509,15 +513,16 @@ calendar[0].style.transform = 'scaleX(0.8)';
 
 console.log(dynlist);
 console.log(coursecomp);
-let coursecount;
+
 for(let k=0;k<dynlist.length;k++){
     
    
     dynlist[k].addEventListener("click",function(){
         
         coursecomp[k].style.display="block";
-       coursecount[k]=1;
+        
     })
+  
 
 }
 ////////////
