@@ -341,7 +341,9 @@ cursor: pointer;
      height: 130px;
     width: 270px;
 } 
-
+.leadtocoursepage{
+    text-decoration: none;
+}
 
 
 

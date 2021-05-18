@@ -8,6 +8,7 @@ document.getElementById('user-pic').style.backgroundImage="url('"+userpic+"')";
 let dynlist=document.getElementsByClassName('dynamicList');
 
 let coursecomp=document.getElementsByClassName('course-components');
+let clickme=document.getElementsByClassName('clickme');
 ////////////
 
 let sitePagesDropDown = document.getElementById('sitePages');
@@ -432,12 +433,39 @@ for(let i=0 ; i<layer.length;i++){
             coursecomp[j].style.display="none";
         }
         coursecomp[i].style.display="block";
+        for(let j=0;j<clickme.length;j++){
+            clickme[j].classList.remove('fa-caret-down');
+        clickme[j].classList.add('fa-caret-right');
+        }
+        clickme[i].classList.add('fa-caret-down');
+        clickme[i].classList.remove('fa-caret-right');
         sessionStorage.setItem("cardthatisclicked",i);
         
 } );
 
 
 }
+/*var gotocoursepage=document.getElementsByClassName("leadtocoursepage");
+for(let i=0;i<gotocoursepage.length;i++){
+    gotocoursepag[i].addEventListener('click',function(){
+
+        outerWrapper[0].style.display = 'none';
+            // layer[1].style.display ='none';
+
+        onClickOfCard[0].style.display = 'block'
+
+        recentContainer[0].style.display = 'none';
+    
+        containerForTopMenu[0].style.display = 'flex';
+
+        topMenu3.innerText = inputName[i].textContent;
+        for(let j=0;j<dynlist.length;j++){
+            coursecomp[j].style.display="none";
+        }
+        coursecomp[i].style.display="block";
+        sessionStorage.setItem("cardthatisclicked",i);
+    })
+}*/
 
 let courseCard = document.getElementsByClassName('courseCard');
 
@@ -492,7 +520,15 @@ goBackToMainPage.addEventListener('click' , function(){
     topMenu3.innerText = ' ';
     pqrs=sessionStorage.getItem("cardthatisclicked");
     coursecomp[pqrs].style.display="none";
-    
+    clickme[pqrs].classList.remove('fa-caret-down');
+    clickme[pqrs].classList.add('fa-caret-right');
+    for(let j=0;j<clickme.length;j++){
+        clickme[j].classList.remove('fa-caret-down');
+    clickme[j].classList.add('fa-caret-right');
+    }
+    for(let j=0;j<dynlist.length;j++){
+        coursecomp[j].style.display="none";
+    }
 
 });
 
@@ -514,11 +550,12 @@ calendar[0].style.transform = 'scaleX(0.8)';
 console.log(dynlist);
 console.log(coursecomp);
 
-for(let k=0;k<dynlist.length;k++){
+for(let k=0;k<clickme.length;k++){
     
    
-    dynlist[k].addEventListener("click",function(){
-        
+     clickme[k].addEventListener("click",function(){
+        clickme[k].classList.remove('fa-caret-right');
+        clickme[k].classList.add('fa-caret-down');
         coursecomp[k].style.display="block";
         
     })
