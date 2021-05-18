@@ -67,6 +67,29 @@
     justify-content: space-between;
 }
 
+
+/* css for the box which appears when any course is being ckicked  */
+
+.containerForTopMenu{
+    margin: 20px auto;
+    width: 90%;
+    height: 80px;
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    border: 1px solid gainsboro;
+    display: none;
+}
+#topMenu1 , #topMenu2 {
+
+    margin: 0 10px;
+}
+
+#topMenu3{
+    margin: -17px 10px 0 10px;
+}
+
+
 /* css for allbox */
 
 
