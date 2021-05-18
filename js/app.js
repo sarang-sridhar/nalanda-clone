@@ -321,6 +321,11 @@ function navDrop(){
 
 
 
+// the above bar thing when any course is clicked 
+
+let topMenu3 = document.getElementById('topMenu3');
+let containerForTopMenu = document.getElementsByClassName('containerForTopMenu');
+
 //js for the dynamic boiler plate
 
 
@@ -343,12 +348,20 @@ for(let i=0 ; i<layer.length;i++){
         onClickOfCard[0].style.display = 'block'
 
         recentContainer[0].style.display = 'none';
+    
+        containerForTopMenu[0].style.display = 'flex';
+
+        topMenu3.innerText = inputName[i].textContent;
+        
 } );
 
 
 }
 
 let courseCard = document.getElementsByClassName('courseCard');
+
+
+let courseNameOnCard = document.getElementsByClassName('courseName')
 
 for(let i= 0 ; i<courseCard.length ; i++){
 
@@ -362,6 +375,11 @@ for(let i= 0 ; i<courseCard.length ; i++){
         onClickOfCard[0].style.display = 'block'
 
         recentContainer[0].style.display = 'none';
+
+        containerForTopMenu[0].style.display = 'flex';
+
+        topMenu3.innerText = courseNameOnCard[i].innerText;
+        
 } );
 
 }
@@ -384,7 +402,16 @@ goBackToMainPage.addEventListener('click' , function(){
     recentContainer[0].style.display = 'block';
 
 
+    containerForTopMenu[0].style.display = 'none';
+
+    topMenu3.innerText = ' ';
+
 });
+
+
+
+
+
 
 //fixing the calendar 
 
