@@ -705,7 +705,8 @@ generateTemplate();
 
 
 // working on staring the course on click of a buttton 
-
+let mycoursedropdown2=document.getElementById('mycoursedropdown');
+    let deleteTheCourse = document.getElementsByClassName('delete');
 
 function staranddelete() {
     let starMyCourse = document.getElementsByClassName('star');
@@ -725,19 +726,23 @@ function staranddelete() {
 
     // working on removing the course 
 
-   let mycoursedropdown2=document.getElementById('mycoursedropdown');
-    let deleteTheCourse = document.getElementsByClassName('delete');
+   mycoursedropdown2=document.getElementById('mycoursedropdown');
+    deleteTheCourse = document.getElementsByClassName('delete');
 
     
         for(let i = 0;i<deleteTheCourse.length ; i++){
             deleteTheCourse[i].addEventListener('click' ,function(){
             root=document.getElementById('root');
+            console.log(root.childNodes[i-2]);
             root.removeChild(root.childNodes[i-2]);
+            console.log(root.childNodes[i-2]);
+           
             mycoursedropdown2.removeChild(mycoursedropdown2.childNodes[i-1]);
+
             coursecompreveal();//function to reveal coursecomp when clicked
-    generateTemplate();//genrateTemplate if clicked
-    dropdownofeachcourse();//gerate the drop down of each course crad on mouse over
-    staranddelete(); //Add event listeners for star and delete
+             generateTemplate();//genrateTemplate if clicked
+             dropdownofeachcourse();//gerate the drop down of each course crad on mouse over
+           staranddelete(); //Add event listeners for star and delete
         }
         
         );
