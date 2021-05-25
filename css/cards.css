@@ -1,10 +1,14 @@
 *{
     margin: 0;
-    padding: 0;
+
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
-
+.nalandaImg{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 #top-nav{
     width:100%;
     background-color:#353a40;
@@ -17,8 +21,47 @@
  
 
 }
+.lb1{
+    margin-top: 10px;
+    padding: 0 6px;
+}
+
+
+#lb1Nav{
+    font-size: 20px;
+    margin-left: -10px;
+}
+
+#lb1Home{
+    margin-left: 3px;
+}
+i{
+    margin-right: 5px;
+}
+#sitePages{
+    cursor: pointer;
+    }
+    #sitePages{
+        margin-left:5px ;
+    }
+    .wrapper{
+        display: none;
+        margin-left: 5px;
+    }
 #cards-dd{
     width:fit-content;
+}
+.dynamicList2{
+    font-size: 12px;
+    margin-top: 10px;
+    
+
+}
+.course-components{
+    display:none;
+    padding-left: 1px 0px 1px 2px;
+    margin-left:10px;
+    font-size:14px;
 }
 #nav-dropdown{
     color:black;border:4px solid gray;background:white;;width:fit-content;
@@ -61,12 +104,20 @@
     width:30px;height:30px;border-radius:50%;background-size:contain;background-repeat:no-repeat;color:white;font-weight:bold;text-align: center;padding:2px;
     background-color: orangered;
 }
-.nalandaImg{
+
+.allBox{
     display: flex;
-    flex-wrap: wrap;
+    justify-content: flex-start;
     justify-content: space-between;
 }
 
+.centerBox{
+  
+    width: 70%;
+    margin:  10px 20px;
+    padding: 10px;
+    
+}
 
 /* css for the box which appears when any course is being ckicked  */
 
@@ -78,7 +129,7 @@
     padding: 20px;
     align-items: center;
     border: 1px solid gainsboro;
-    display: none;
+    
 }
 #topMenu1 , #topMenu2 {
 
@@ -86,481 +137,186 @@
 }
 
 #topMenu3{
-    margin: -17px 10px 0 10px;
+    margin: 0 10px;
 }
 
 
-/* css for allbox */
-
-
-
-.allBox{
-    margin-top: 25px;
-    display: flex;
-    justify-content:flex-start;
-}
-
-/* css for left box */
-
-
-.leftBox{
-    margin: 20px 0 0 20px;
-    display: flex;
-    flex-direction: column;
-}
-
-
-/* css for left box ends here */
-
-
-/* css for lb1 start */
-
-.leftbox1{
-    width: 200px;
-    border: 1px solid gainsboro;
-    padding: 20px;
-    
-}
-
-.lb1{
-    margin-top: 10px;
-    padding: 0 6px;
-}
-
-
-#lb1Nav{
-    font-size: 20px;
-    margin-left: -10px;
-}
-
-#lb1Home{
-    margin-left: 3px;
-}
-i{
-    margin-right: 5px;
-}
-#sitePages{
-cursor: pointer;
-}
-#sitePages{
-    margin-left:5px ;
-}
-.wrapper{
-    display: none;
-    margin-left: 5px;
-}
-
-.myCourses{
-
-    margin-top: 10px;
-    margin-left: 11px;
-    cursor: pointer;
-}
-
-
-/* css for lb 1 over */
-
-/* css for lb2 starts */
-.leftBox2{
-    width: 200px;
-    margin-top: 20px;
-    padding: 30px;
-    border: 1px solid gainsboro;
-}
-
-.lb2{
-    margin: 10px 0;
-}
-
-#lb2ImpLinks{
-    font-size: 20px;
-    margin-left: -20px;
-}
-
-/* css for lb2 over */
-
-
-/* css for lb3 starts */
-
-
-
-.leftBox3{
-    margin-top: 20px;
-    width: 200px;
-    padding: 30px;
-    border: 1px solid gainsboro;
-}
-
-
-#lb3Events{
-    font-size: 20px;
-
-    margin-left: -20px;
-}
-
-
-.lb3{
-    margin: 10px 0;
-}
-
-/* css for lb3 ends */
-
-
-
-/* css for the course Card */
-.recentConatainer{
-    margin: 20px 0 0 10px;
-    width: 95%;
-    border: 1px solid gainsboro;
-}
-
-.rcHead{
-    width: 90%;
-    display: flex;
-    flex-wrap: wrap;
-    margin:10px auto;
-    justify-content: space-between;
-}
-
-.rcHead1{
-    font-size: 20px;
-}
-
-.rcHead2 button{
-    height: 30px;
-    width: 30px;
-    font-size: 25px;
-    font-weight: bolder;
-    cursor: pointer;
-    background: whitesmoke;
-    color: navy;
-    outline: none;
-    border: gray;
-}
-
-
-.courseContainer{
-    width: 100%;
-    margin: 10px 0;
-    display: flex;
-   
-    padding: 30px;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.courseCard ,.courseCard2 , .courseCard3{
-   border: 1px solid gainsboro;
-    height: 170px;
-   
-}
-
-
-.logoImg1{
-    background:linear-gradient(120deg,rgb(253, 255, 231),rgb(255, 221, 142)) ;
-    height: 130px;
-    width: 280px;
-}
-
-.logoImg2{
-    background:linear-gradient(120deg,rgb(200, 255, 155),rgb(255, 255, 255)) ;
-    height: 130px;
-    width: 280px;
-}
-
-.semDetails , .courseName{
-    text-align: center;
-}
-.course-components{
-    display:none;
-    padding-left: 1px 0px 1px 2px;
-    margin-left:10px;
-    font-size:14px;
-}
-
-.outerWrapper{
-
-    width:95%;
-    margin: 10px  10px;
-    border: 1px solid gainsboro;
-   
-}
-
-
-.courseHeader{
-
-    margin-left: 20px;
-    margin-top: 30px;
-    font-size: 20px;
-
-}
-
-
-.flexboxForCourses{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
- justify-content: space-around;
-   
- 
-   
-}
-
-.logoImg3{
-    background: linear-gradient(120deg,rgb(196, 255, 206),rgb(255, 249, 231));
-     height: 130px;
-    width: 270px;
-}
-.logoImg4{
-   background:  linear-gradient(120deg,rgb(164, 255, 179),rgb(255, 212, 142));
-    height: 130px;
-    width: 270px;
-}
-.logoImg5{
-    background: linear-gradient(120deg,rgb(255, 171, 171),rgb(255, 202, 142));
-     height: 130px;
-    width: 270px;
-}
-.logoImg6{
-    background: linear-gradient(120deg,rgb(92, 255, 236),rgb(195, 255, 177));
-     height: 130px;
-    width: 270px;
-}
-.logoImg7{
-    background:linear-gradient(120deg,rgb(214, 214, 214),rgb(231, 231, 231));
-     height: 130px;
-    width: 270px;
-}
-.logoImg8{
-    background: linear-gradient(120deg,rgb(200, 123, 231),rgb(65, 155, 233));
-     height: 130px;
-    width: 270px;
-} 
-.logoImg9{
-    background: linear-gradient(120deg,rgb(250, 237, 255),rgb(69 ,178, 255));
-     height: 130px;
-    width: 270px;
-} 
-.leadtocoursepage{
-    text-decoration: none;
-}
-
-
-
-
-/* css for centerBox */
-
-
-.centerContainer{
+.centerBox2{
+   display:none;
     width: 70%;
+    margin:  10px 20px;
+    padding: 10px;
     
-    display: flex;
-    flex-direction: column;
 }
-/* the dropdown feature */
-
-
-.dropdownForCards{
-    display: flex;
-    flex-direction: row-reverse;
-    padding: 20px;
-}
-.dropdownForCards select{
-    width: 80px;
-    height: 30px;
-}
-
-
-
-
-
-/* css for the center box also over now working on add courses feature */
-.layer{
-    height: 180px;
-    width: 270px;
-    border: 1px solid gainsboro;
-    text-align: center;
-    
-     margin-top: 20px;
-}
-
-
-.inputSem , .inputName{
-    margin-top: 5px;
-}
-
-
-/* css for the footer */
-
-.footer{
-    width: 100%;
-}
-.footer1{
-   
-    width: 90%;
-    margin: 20px auto;
-    display: flex;
-   justify-content: space-between;
-   flex-wrap: wrap;
-}
-
-.footer2{
-    width: 90%;
-    margin: 20px auto;
-    
-    display: flex;
-    justify-content: space-between;
-  
-}
-#input1 {
-    width: 250px;
-    height: 30px;
-}
-
-#input2{
-    width: 200px;
-    height: 30px;
-}
-
-#btn11 , #btn22{
-    height: 30px ;
-    width: 150px;
-}
-
-#btn11{
-    background-color: rgb(255, 239, 197);
-    font-weight: bolder;
-    border: whitesmoke;
-    height: 30px ;
-    width: 150px;
-}
-
-#btn22{
-    background-color: rgb(242, 255, 205);
-    font-weight: bolder;
-    border: whitesmoke;
-}
-
-
-/* styling the target element */
-
-#cloneToBe{
-
-    margin-top: 20px;
+.recentContainer  ,.rootContainer{
     border: 1px solid gainsboro;
 }
-#target1{
-    width: 100%;
-    margin-top: 20px;
+.rootContainer{
+    margin: 20px auto;
+}
+.recentContainer h3 ,.rootContainer h3{
+    margin-left: 20px;
+}
+#root , #recent{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-  
-    text-align: center;
-}
-
-.layer7{
-    display: none;
-}
-
-
-
-
-
-
-/* for the announcement section */
-
-
-
-
-
-.announcementBox{
-    margin-top: 30px;
-    width: 100%;
+    width: 95%;
+    margin: 40px auto;
+    height: auto;
     padding: 10px;
+    justify-content: space-around;
+}
+#cards-dd{
+    float:right;
+    margin-right:10px;
 }
 
-.announceWrapper{
-   
-    width: 100%;
+
+.cardBox{
+    height: 180px;
+    width: 280px;
+    border: 1px solid gainsboro;
+    margin: 20px 0;
+}
+
+.cardImg{
+    width: 280px;
+    height: 130px;
+    background:linear-gradient(120deg , lightgreen , lightblue);
     display: flex;
+    justify-content: flex-end;
+  
+}
+
+.dropdown{
+    height: 30px ;
+    width: 30px;
+    border-radius: 50%;
+    outline:none;
+    border: 1px solid rgb(216, 216, 216);
+    background-color: rgb(255, 255, 255,.8);
+    color: rgb(0, 0, 0);
+}
+
+
+/* styling that button click effect thing */
+
+
+.star , .delete{
+    background: white;
+    border: white;
+    width:150px;
+    margin-top:5px;
+    font-weight: bold;
+}
+.star:hover , .delete:hover{
+    background: gainsboro;
+}
+
+.dropDownOnClick{
+    display: none;
+    flex-direction: column;
+    border: 1px solid black;
+    height: 50px;
+    width: 155px;
+    background: rgb(255, 255, 255);
+}
+
+
+.semDetails , .courseDetails{
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    margin: 3px 0;
+    font-weight: bold;
+}
+
+.inputBox , .btnBox{
+    display: flex;
+    margin:30px auto ;
+    width: 65%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.input1 , .input2 , .btn1 , .btn2{
+    width: 45%;
+    display:flex;
     justify-content: center;
 }
-
-#chatList{
-    margin: 20px 0 0 20px;
+#input1Sem ,#input2Course {
+    width: 100%;
+    height: 25px;
+}
+#add ,#remove{
+    width: 70%;
+    height: 25px;
+    outline: none;
+    border: white;
+    cursor: pointer;
+    font-weight: bolder;
+}
+#add{
+    background-color:rgb(207, 255, 185) ;
+}
+#remove{
+    background-color:rgb(255, 207, 207) ;
 }
 
 
 
-#announceInput{
-    margin:10px 0;
-    height: 90px;
-    width: 90%;
-    padding: 10px;
+/* working on leftbox */
+
+#leftBox{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+}
+.leftElement{
+    border: 1px solid gainsboro;
+    padding: 5px;
+    width: 200px;
+    margin: 20px 0;
+    display: block;
 }
 
-::placeholder {
-    padding: 0 0 0 10px;
-  }
+.dynamicList li{
+    margin: 15px 0 0 -10px ;
+    font-size: 15px;
+    
+}
 
+/* css for right side */
 
-
-  #makeAnnouncement{
-      width: 100%;
-   
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 20px 0;
-  }
-  #makeAnnouncement button{
-      width: 50%;
-      height: 40px;
-      background-color: rgb(211, 255, 211);
-      font-weight: bold;
-      outline:none;
-      border: white;
-
-      cursor: pointer;
-  }
-
-  
-/* right side */
 
 
 .rightBox{
     width: 20%;
-    margin-top: 0px;
-    margin-right: 20px;
+    margin-top: 20px;
     display: flex;
+    align-items: center;
     flex-direction: column;
 }
 
 
-.cale{
-    margin:20px auto;
-    padding: 0px;
+.calendar{
+    margin-bottom: 20px  ;
+    padding: 10px;
     border: 1px solid gainsboro;
-    width: 290px;
-    
+    width: 230px;
 }
 
 .coverMeUp{
-    /* margin-top: 20px;
+    margin-top: 20px;
     width: 220px;
     height: 275px;
     background-color: white;
-    overflow: hidden; */
-    height: 300px;
-    width: 300px;
-
+    overflow: hidden;
    
 }
 .upcomingEvents{
     border: 1px solid gainsboro;
     padding: 10px;
-    width: 290px;
+    width: 230px;
 }
 #ueHead{
     margin: 10px 0;
@@ -570,7 +326,7 @@ cursor: pointer;
     padding: 10px;
     border: 1px solid gainsboro;
     margin-top: 20px;
-    width: 290px;
+    width: 230px;
 }
 
 .tlDiv{
@@ -613,95 +369,6 @@ cursor: pointer;
     
 
 }
-
-
-
-.chatBox{
-    
-    padding: 10px;
-    margin-top: 20px;
-    width: 290px;
-    border: 1px solid gainsboro;
-}
-
-.icon{
-
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.icon i{
-    font-size: 50px;
-    color: rgb(200, 200, 200);
-}
-
-
-
-@media (max-width:1150px){
-        
-
-    .allBox{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .leftBox{
-        order: 2;
-        width: 70%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 10px auto;
-
-    }
-
-    .leftbox1 , .leftBox2 , .leftBox3{
-        width: 100%;
-    }
-
-    .centerContainer{
-        order: 1;
-        display: flex;
-        flex-direction: column;
-        width: 74.5%;
-        margin: 20px auto;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-
-
-    .rightBox{
-        order: 3;
-        display: flex;
-        width: 70%;
-        justify-content: center;
-        flex-direction: column;
-        margin: 10px auto;
-    }
-
-
-    .calendar , .upcomingEvents,.timeline,.chatBox {
-        width: 100%;
-    }
-
-    .calendar{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-   
-}
-
-
-
 
 /* styling the dynamic thing  */
 .onClickOfCard{
@@ -747,77 +414,57 @@ cursor: pointer;
 
 
 
-
-@media  (max-width:720px){
-
-
-    .footer2{
-        width: 90%;
-        margin: 20px auto;
-        
-        display: flex;
-        justify-content:center;
-        align-items: center;
-      
-    }
-
-    #input1 {
-        width: 250px;
-        height: 30px;
-    }
+.chatBox{
     
-    #input2{
-        width: 250px;
-        height: 30px;
-    }
+    padding: 10px;
+    margin-top: 20px;
+    width: 230px;
+    border: 1px solid gainsboro;
+}
+.stared{
+      padding: 10px;
+    margin-top: 20px;
+    width: 230px;
+    border: 1px solid gainsboro;
+}
+.stared i {
+    color: gold;
+}
 
-    .rcHead{
-        justify-content: center;
-        align-items: center;
-    }
-    .outerWrapper{
-        width: 100%;
-    }
 
-    .recentConatainer{
-        width: 100%;
-    }
-    .footer2{
-        display: flex;
+.icon {
+
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon i  {
+    font-size: 50px;
+    color: rgb(200, 200, 200);
+}
+
+.staredCourseName{
+    margin-top: 10px;
+}
+
+
+@media (max-width:1120px){
+    .allBox{
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-
-    .courseCard{
-        margin:20px 0;
+    .rightBox{
+        order: 3;
     }
-
-
-    .logoImg1 , .logoImg2, .logoImg3,.logoImg4,.logoImg5,.logoImg6,.logoImg7,.logoImg8,.logoImg9{
-        width: 308px;
-        margin:0px auto;
+    .centerBox{
+        order: 1;
     }
-
-    .leftBox , .rightBox{
-
-        width:95%;
-
-
+    #leftBox{
+        order: 2;
     }
-
-    .centerContainer{
-        width: 95%;
-    }
-
-    .recentConatainer{
-        margin: 10px auto;
-    }
-
-    .layer , .courseCard{
-        width: 310px;
-    }
-    
 }
 
 
@@ -835,18 +482,5 @@ cursor: pointer;
     .nalanda{
         display: flex;
    flex-direction: row-reverse;
-    }
-
-    .footer1{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    #nalanda-of-nav{
-        display:none;
-    }
-    img{
-        width:80%;
     }
 }
