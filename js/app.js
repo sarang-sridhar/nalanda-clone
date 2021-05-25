@@ -650,6 +650,7 @@ for(let i=0 ; i<layer.length;i++){
        document.getElementsByClassName('centerBox')[0].style.display="none";
        document.getElementsByClassName('centerBox2')[0].style.display="block";
        topMenu3.innerText = document.getElementsByClassName('courseDetails')[i].innerText;
+     //  sessionStorage.set("cfa",topMenu3.innerText);
        ////Make Left side drop down on clicking a particular course
           
        for(let j=0;j<coursecomp.length;j++){      //clearing any clicked course on the left side
@@ -705,7 +706,8 @@ generateTemplate();
 
 
 // working on staring the course on click of a buttton 
-
+let mycoursedropdown2=document.getElementById('mycoursedropdown');
+    let deleteTheCourse = document.getElementsByClassName('delete');
 
 function staranddelete() {
     let starMyCourse = document.getElementsByClassName('star');
@@ -725,19 +727,23 @@ function staranddelete() {
 
     // working on removing the course 
 
-   let mycoursedropdown2=document.getElementById('mycoursedropdown');
-    let deleteTheCourse = document.getElementsByClassName('delete');
+   mycoursedropdown2=document.getElementById('mycoursedropdown');
+    deleteTheCourse = document.getElementsByClassName('delete');
 
     
         for(let i = 0;i<deleteTheCourse.length ; i++){
             deleteTheCourse[i].addEventListener('click' ,function(){
             root=document.getElementById('root');
+            console.log(root.childNodes[i-2]);
             root.removeChild(root.childNodes[i-2]);
+            console.log(root.childNodes[i-2]);
+           
             mycoursedropdown2.removeChild(mycoursedropdown2.childNodes[i-1]);
+
             coursecompreveal();//function to reveal coursecomp when clicked
-    generateTemplate();//genrateTemplate if clicked
-    dropdownofeachcourse();//gerate the drop down of each course crad on mouse over
-    staranddelete(); //Add event listeners for star and delete
+             generateTemplate();//genrateTemplate if clicked
+             dropdownofeachcourse();//gerate the drop down of each course crad on mouse over
+           staranddelete(); //Add event listeners for star and delete
         }
         
         );
@@ -751,6 +757,7 @@ staranddelete();
 let makeAnnouncement = document.getElementById('makeAnnouncement');
 let announcementConatainer = document.getElementById('anContainer');
 let announcementHolder = document.getElementById('announcementHolder');
+let announcementMaker=document.getElementById('announcementMaker');
 let anBocAnnouncement = document.getElementById('anBocAnnouncement');
 let anBox = document.getElementsByClassName('anBox');
 
@@ -769,6 +776,13 @@ goBackToMainPage.addEventListener('click' , function(){
 
 anBocAnnouncement.addEventListener('click' , function(){
    
-
-    announcementConatainer.innerHTML += `<li id="ourAnnouncement">${announcementHolder.value}</li>`
+    //var abc=sessionStorage.get("cfa");
+    announcementConatainer.innerHTML += `<li id="ourAnnouncement">
+    <h4>Announcement from ${announcementMaker.value}:</h4>
+    <ul>
+   <li> ${announcementHolder.value}</li>
+   </ul>
+    </li>`
+    announcementMaker.value="";
+    announcementHolder.value="";
 })
