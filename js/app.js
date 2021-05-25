@@ -142,7 +142,7 @@ function dropdownofeachcourse(){
     for(let i =0 ; i<dropDownOnClick.length ; i++){
  dropDown = document.getElementsByClassName('dropdown');
  dropDownOnClick = document.getElementsByClassName('dropDownOnClick');
-count =0;
+   count=0;
 
         dropDown[i].addEventListener('mouseover', function () {
             count += 1;
@@ -623,6 +623,7 @@ let layer=document.getElementsByClassName('details');
 
 for(let i=0 ; i<layer.length;i++){
     layer[i].addEventListener('click' , function(){
+        window.scrollTo(0,160);
         onClickOfCard[0].style.display="block";
        document.getElementsByClassName('centerBox')[0].style.display="none";
        document.getElementsByClassName('centerBox2')[0].style.display="block";
@@ -702,8 +703,25 @@ function staranddelete() {
 
     // working on removing the course 
 
+   let mycoursedropdown2=document.getElementById('mycoursedropdown');
+    let deleteTheCourse = document.getElementsByClassName('delete');
 
- 
+    
+        for(let i = 0;i<deleteTheCourse.length ; i++){
+            deleteTheCourse[i].addEventListener('click' ,function(){
+            root=document.getElementById('root');
+            root.removeChild(root.childNodes[i]);
+            mycoursedropdown2.removeChild(mycoursedropdown2.childNodes[i+1]);
+            coursecompreveal();//function to reveal coursecomp when clicked
+    generateTemplate();//genrateTemplate if clicked
+    dropdownofeachcourse();//gerate the drop down of each course crad on mouse over
+    staranddelete(); //Add event listeners for star and delete
+        }
+        
+        );
+    }
+    
+   
 }
 staranddelete();
 
