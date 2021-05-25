@@ -623,7 +623,15 @@ let layer=document.getElementsByClassName('details');
 
 for(let i=0 ; i<layer.length;i++){
     layer[i].addEventListener('click' , function(){
-        window.scrollTo(0,160);
+        ////////
+        cardbox=document.getElementsByClassName('cardBox');
+        var clone=cardbox[i].cloneNode(true);
+        main  = document.getElementById('recent');
+        main.removeChild(main.childNodes[0]);
+        main.appendChild(clone);
+
+        ///////
+        window.scrollTo(0,160); ////Scroll to the top
         onClickOfCard[0].style.display="block";
        document.getElementsByClassName('centerBox')[0].style.display="none";
        document.getElementsByClassName('centerBox2')[0].style.display="block";
