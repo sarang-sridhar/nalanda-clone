@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nalanda AWS</title>
+</head>
+<link rel="stylesheet" href="../css/all.css">
+<link rel="stylesheet" href="../css/cards.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/cal.css">
+<script src="../js/cal.js" defer></script>
+<body>
+
+
+
+    <div id="top-nav">
+        <a href="#" id="nalanda-of-nav">Nalanda</a>
+        <div id="left-part">
+            <div id="bell-icon"><i class="fa fa-bell"></i></div>
+            <div id="user-name"></div>
+            <div id="profile-details"></div>
+            <div id="user-pic"></div>
+            <div onclick="navDrop()">
+                <i class="fa fa-caret-down"></i>
+
+            </div>
+        </div>
+
+    </div>
+    <div id="nav-dropdown" style="display:none;;">
+        <div><a href="../pages/cards.html">Dashboard</a></div>
+        <hr>
+        <div><a href="#">Profile</a></div>
+        <div><a href="#">Grades</a></div>
+        <div><a href="#">Messages</a></div>
+        <div><a href="#">Preferences</a></div>
+        <hr>
+        <div><a href="../index.html">Log out</a></div>
+    </div>
+
+
+    <div class="nalandaImg" style="margin-top: 120px;">
+
+        <div class="bitsP">
+            <img src="../images/cardImages/logo1.gif" alt="">
+        </div>
+        <div id="locale">
+            <div class="nalanda">
+                <img src="../images/cardImages/logo2.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="allBox">
+
+        <div id="leftBox" sttle="margin-left:10px;">
+
+        </div>
+
+        <div class="centerBox">
+
+            <div class="recentContainer">
+                <h3>Recently Accessed Courses</h3>
+                <div id="recent"></div>
+            </div>
+
+            <div class="rootContainer">
+                <h3>Course Overview</h3>
+                <select id="cards-dd" onchange="viewDropdown(this.value)">
+                    <option value="1">CARDS VIEW</option>
+                    <option value="2">LIST VIEW</option>
+
+                </select>
+                <div id="root"></div>
+
+
+
+
+
+
+
+
+
+            </div>
+            <!---End div for root container-->
+            <div class="inputBox">
+                <div class="input1">
+                    <input id="input1Sem" type="text" placeholder="Enter The Semester Name">
+                </div>
+                <div class="input2">
+                    <input id="input2Course" type="text" placeholder="Enter The Course Name">
+                </div>
+            </div>
+
+            <div class="btnBox">
+                <div class="btn1"><button id="add">Add The Course</button></div>
+                <div class="btn2"><button id="remove">Remove The Course</button></div>
+            </div>
+
+
+
+
+
+
+
+
+        </div>
+        <!---End div for center box-->
+        <!-------Dynamic Template-->
+        <div class="centerBox2">
+            <!--               here we will add html for the dynamic boiler   plate  -->
+
+            <div class="containerForTopMenu">
+
+                <div id="topMenu1">
+                    Dashboard /
+                </div>
+
+
+                <div id="topMenu2">
+                    My Courses /
+                </div>
+
+
+                <div id="topMenu3">
+
+                </div>
+
+
+            </div>
+
+            <div class="onClickOfCard">
+
+                <div class="onClickOfCard1 oncc">
+
+                    <div class="onccWrapper">
+
+                        <h3 id="makeAnnouncement"><i class="fas fa-comments"></i> Announcements</h3>
+                        <button id="goBackToMainPage"> <i class="fas fa-arrow-left"></i> Go Back</button>
+                    </div>
+
+                </div>
+
+                <div class="anBox">
+                    <div class="anBox1">
+                    <input type="text" id="announcementMaker" placeholder="Enter Name of Announcement Maker">
+                    <input type="text" id="announcementHolder" placeholder="Enter the announcement">
+                    </div>
+                    <div class="anBox2" style="margin-top:8%">
+                    <button id="anBocAnnouncement">Make Announcement</button>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="onClickOfCard2 oncc">
+                    <h2>Online Quiz</h2>
+                </div>
+
+                <hr>
+
+                <div class="onClickOfCard2 oncc">
+                    <h2>Assignment</h2>
+                </div>
+
+                <hr>
+
+                <div class="onClickOfCard4 oncc">
+
+                    <h2>Lecture-1</h2>
+                </div>
+
+                <hr>
+
+                <div class="onClickOfCard5 oncc">
+
+                    <h2>Lecture-2</h2>
+                </div>
+
+                <hr>
+
+                <div class="onClickOfCard6 oncc">
+
+                    <h2>Lecture-3</h2>
+                </div>
+
+                <hr>
+
+                <div class="onClickOfCard7 oncc">
+
+                    <h2>Lecture-4</h2>
+                </div>
+
+                <hr>
+
+                <div class="onClickOfCard8 oncc">
+
+                    <h2>Lecture-5</h2>
+                </div>
+
+                <hr>
+
+                <div class="onClickOfCard9 oncc">
+
+                    <h2>Lecture-6</h2>
+                </div>
+
+                <hr>
+
+                <div class="onClickOfCard10 oncc">
+
+                    <h2>Lecture-7</h2>
+                </div>
+
+                <hr>
+
+                <div class="onClickOfCard1 oncc">
+
+                    <h2>Lecture-8</h2>
+                </div>
+
+                <hr>
+
+                <div class="onClickOfCard12 oncc">
+
+                    <h2>Lecture-9</h2>
+                </div>
+
+                <hr>
+
+
+
+
+
+                <!--Attempt to make changes happen-->
+
+
+
+
+            </div>
+
+        </div>
+        <!------------->
+
+        <div class="rightBox">
+
+            <div class="calendar">
+                <h3> Calendar</h3>
+                
+                <div class="month">
+                    <i class="fas fa-angle-left prev"></i>
+                    <div class="date">
+                      <h1></h1>
+                      <p></p>
+                    </div>
+                    <i class="fas fa-angle-right next"></i>
+                  </div>
+                  <div class="weekdays">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                  </div>
+                  <div class="days"></div>
+
+            
+
+            </div>
+
+
+            <div class="upcomingEvents">
+
+                <h3 id="ueHead">Upcoming Events</h3>
+
+                <div id="holidays"></div>
+
+            </div>
+
+            <div class="timeline">
+
+
+                <h3>Timeline</h3>
+
+                <div class="tlDiv">
+
+                    <div class="tlDiv1">
+                        <select id="cal-dd1">
+
+                            <option> All</option>
+
+                            <option> Due</option>
+
+                        </select>
+                    </div>
+
+
+
+                    <div class="tlDiv2">
+                        <select id="cal-dd2">
+                            <option>Sort By Dates</option>
+                            <option>Sort By Time</option>
+
+                        </select>
+                    </div>
+
+                </div>
+
+                <hr>
+
+                <div class="iconBox">
+                    <i class="far fa-address-book"></i>
+                </div>
+
+                <h4>No upcoming activities due</h4>
+            </div>
+
+            <div class="chatBox">
+
+
+                <h4> Announcements</h4>
+
+
+                <div class="icon">
+                    <i class="fas fa-bell"></i>
+                </div>
+
+                <ul id="anContainer"></ul>
+
+            </div>
+
+
+            <div class="stared">
+
+                <h4><i class="fas fa-star"></i> Stared Courses </h4>
+
+                <ul id="staredList"></ul>
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+
+
+
+    <script src="../js/app.js"></script>
+</body>
+
+</html>
