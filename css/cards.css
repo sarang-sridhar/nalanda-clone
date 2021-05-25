@@ -489,12 +489,42 @@ i{
 #makeAnnouncement{
     cursor: pointer;
 }
+
 @media (max-width:1120px){
     .allBox{
+        width: 100%;
+        margin: 10px auto;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+
+    .centerBox{
+        width: 100%;
+    }
+    .recentContainer, .rootContainer {
+    border: 1px solid gainsboro;
+    width: 100%;
+}
+
+.inputBox , .btnBox{
+    width: 100%;
+}
+#add , #remove{
+    width: 85%;
+}
+
+#leftBox , .leftElement{
+    width: 100%;
+}
+
+.rightBox , .calendar ,.timeline , .chatBox , .stared , .upcomingEvents{
+    width: 100%;
+}
+
+.coverMeUp{
+    margin: 10px auto;
+}
     .rightBox{
         order: 3;
     }
@@ -505,7 +535,6 @@ i{
         order: 2;
     }
 }
-
 
 @media (max-width:850px){
     .nalandaImg{
