@@ -71,11 +71,25 @@ recentCourseGenerator(recentCourseData);
 function recentCourseGenerator(data){
     for(let i = 0 ; i <data.length;i++){
         let card = `<div class="cardBox">
-                        <div class="cardImg">
+        <div class="cardImg">
+
+        <button class="dropdown">
+        <i class="fas fa-ellipsis-h"></i>
+        </button>
 
 
+                   <div class="dropDownOnClick">
+<div>
+<button class="star">Star Course</button>
+</div>
 
-                        </div>
+<div>
+    </div>
+
+
+<button class="delete">Remove Course</button>
+</div>
+</div>
                                <div class="details">
                         <div class="semDetails"> ${courseData[i].SemDetails}</div>
                         
@@ -704,7 +718,7 @@ function staranddelete() {
         starMyCourse[i].addEventListener('click', function () {
 
 
-            staredList.innerHTML += `<li class="staredCourseName">${courseDetails[i + 2].textContent}</li>`
+            staredList.innerHTML += `<li class="staredCourseName">${courseDetails[i].textContent}</li>`
 
         });
     }
@@ -718,8 +732,8 @@ function staranddelete() {
         for(let i = 0;i<deleteTheCourse.length ; i++){
             deleteTheCourse[i].addEventListener('click' ,function(){
             root=document.getElementById('root');
-            root.removeChild(root.childNodes[i]);
-            mycoursedropdown2.removeChild(mycoursedropdown2.childNodes[i+1]);
+            root.removeChild(root.childNodes[i-2]);
+            mycoursedropdown2.removeChild(mycoursedropdown2.childNodes[i-1]);
             coursecompreveal();//function to reveal coursecomp when clicked
     generateTemplate();//genrateTemplate if clicked
     dropdownofeachcourse();//gerate the drop down of each course crad on mouse over
