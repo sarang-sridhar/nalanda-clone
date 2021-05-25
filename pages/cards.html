@@ -5,48 +5,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nalanda Home Page Making</title>
+    <title>Nalanda AWS</title>
 </head>
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../css/all.css">
 <link rel="stylesheet" href="../css/cards.css">
-<link rel="stylesheet" href="../css/cal.css">
-<script src="../js/cal.js" defer></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
 
-<body> 
+<body>
+
+
 
     <div id="top-nav">
-    <a href="#" id="nalanda-of-nav">Nalanda</a>
-    <div id="left-part">
-        <div id="bell-icon"><i class="fa fa-bell"></i></div>
-        <div id="user-name"></div>
-        <div id="profile-details"></div>
-        <div id="user-pic" ></div>
-        <div onclick="navDrop()">
-            <i class="fa fa-caret-down"></i>
-          
+        <a href="#" id="nalanda-of-nav">Nalanda</a>
+        <div id="left-part">
+            <div id="bell-icon"><i class="fa fa-bell"></i></div>
+            <div id="user-name"></div>
+            <div id="profile-details"></div>
+            <div id="user-pic"></div>
+            <div onclick="navDrop()">
+                <i class="fa fa-caret-down"></i>
+
+            </div>
         </div>
+
     </div>
-    
-</div>
-<div id="nav-dropdown" style="display:none;;">
-    <div><a href="../pages/cards.html">Dashboard</a></div>
-    <hr>
-    <div><a href="#">Profile</a></div>
-    <div><a href="#">Grades</a></div>
-    <div><a href="#">Messages</a></div>
-    <div><a href="#">Preferences</a></div>
-    <hr>
-    <div><a href="../index.html">Log out</a></div>
-</div>
+    <div id="nav-dropdown" style="display:none;;">
+        <div><a href="../pages/cards.html">Dashboard</a></div>
+        <hr>
+        <div><a href="#">Profile</a></div>
+        <div><a href="#">Grades</a></div>
+        <div><a href="#">Messages</a></div>
+        <div><a href="#">Preferences</a></div>
+        <hr>
+        <div><a href="../index.html">Log out</a></div>
+    </div>
 
-
-
-
-
-
-
+ 
     <div class="nalandaImg" style="margin-top: 120px;">
 
         <div class="bitsP">
@@ -59,638 +54,196 @@
         </div>
     </div>
 
-    
-    
-    <div class="containerForTopMenu">
-
-        <div id="topMenu1">
-            Dashboard /
-        </div>
-
-
-        <div id="topMenu2">
-            My Courses /
-        </div>
-
-
-        <div  id="topMenu3">
-
-        </div>
-
-
-    </div>
-    
-    
-    
-    
-    
-
     <div class="allBox">
 
+        <div id="leftBox">
 
-        <div class="leftBox">
-
-
-
-            <!-- first left box starts -->
-            <div class="leftbox1">
-
-                <div class="lb1" id="lb1Nav">Navigation</div>
-
-                <div class="lb1"> <i class="fas fa-angle-down"></i>Dashboard</div>
-
-                <div class="lb1" id="lb1Home"> <i class="fas fa-home"></i> Site Home</div>
-
-                <div class="lb1" id="sitePages"> <i class="fas fa-angle-down"></i>Site Pages
-
-                    <div class="wrapper" class="lb1">
-                        <div class="lb1"><i class="fas fa-square"></i>Site Blogs</div>
-                        <div class="lb1"><i class="fas fa-square"></i>Site Badges</div>
-                        <div class="lb1"><i class="fas fa-square"></i>Tags</div>
-                        <div class="lb1"> <i class="far fa-calendar-alt"></i>Calendar</div>
-
-                    </div>
-                </div>
-
-
-                <div class="myCourses">
-
-                    <div id="course-dd"> <i class="fas fa-angle-down"></i>My Courses</div>
-
-
-                    <ul class="myCourseDropdown" style="list-style-type: none;">
-                        <li class="dynamicList"><i class="fa fa-caret-right clickme"></i>GENERAL CHEMISTRY
-                            <ul class="course-components">
-                                <li>Participants</li>
-                                <li>Badges</li>
-                                <li>Competencies</li>
-                                <li>Grades</li>
-                                <li>Notice Section</li>
-                                <li>Online Quiz</li>
-                                <li>Assignment</li>
-                                <li>lecture-1</li>
-                                <li>lecture-2</li>
-                                <li>lecture-3</li>
-                                <li>lecture-4</li>
-                                <li>lecture-5</li>
-                                <li>lecture-6</li>
-                                <li>lecture-7</li>
-                                <li>lecture-8</li>
-                                <li>lecture-9</li>
-                                <li>lecture-10</li>
-                            </ul>
-                        </li>
-                        <li class="dynamicList"><i class="fa fa-caret-right clickme"></i>ADVANCED CALCULUS
-                            <ul class="course-components">
-                                <li>Participants</li>
-                                <li>Badges</li>
-                                <li>Competencies</li>
-                                <li>Grades</li>
-                                <li>Notice Section</li>
-                                <li>Online Quiz</li>
-                                <li>Assignment</li>
-                                <li>lecture-1</li>
-                                <li>lecture-2</li>
-                                <li>lecture-3</li>
-                                <li>lecture-4</li>
-                                <li>lecture-5</li>
-                                <li>lecture-6</li>
-                                <li>lecture-7</li>
-                                <li>lecture-8</li>
-                                <li>lecture-9</li>
-                                <li>lecture-10</li>
-                            </ul>
-                        </li>
-                        <li class="dynamicList"><i class="fa fa-caret-right clickme"></i>ELECTRICAL SCIENCES
-                            <ul class="course-components">
-                                <li>Participants</li>
-                                <li>Badges</li>
-                                <li>Competencies</li>
-                                <li>Grades</li>
-                                <li>Notice Section</li>
-                                <li>Online Quiz</li>
-                                <li>Assignment</li>
-                                <li>lecture-1</li>
-                                <li>lecture-2</li>
-                                <li>lecture-3</li>
-                                <li>lecture-4</li>
-                                <li>lecture-5</li>
-                                <li>lecture-6</li>
-                                <li>lecture-7</li>
-                                <li>lecture-8</li>
-                                <li>lecture-9</li>
-                                <li>lecture-10</li>
-                            </ul>
-                        </li>
-                        <li class="dynamicList"><i class="fa fa-caret-right clickme"></i>C PROGRAMMING
-                            <ul class="course-components">
-                                <li>Participants</li>
-                                <li>Badges</li>
-                                <li>Competencies</li>
-                                <li>Grades</li>
-                                <li>Notice Section</li>
-                                <li>Online Quiz</li>
-                                <li>Assignment</li>
-                                <li>lecture-1</li>
-                                <li>lecture-2</li>
-                                <li>lecture-3</li>
-                                <li>lecture-4</li>
-                                <li>lecture-5</li>
-                                <li>lecture-6</li>
-                                <li>lecture-7</li>
-                                <li>lecture-8</li>
-                                <li>lecture-9</li>
-                                <li>lecture-10</li>
-                            </ul>
-                        </li>
-                        <li class="dynamicList"><i class="fa fa-caret-right clickme"></i>GENERAL BIOLOGY
-                            <ul class="course-components">
-                                <li>Participants</li>
-                                <li>Badges</li>
-                                <li>Competencies</li>
-                                <li>Grades</li>
-                                <li>Notice Section</li>
-                                <li>Online Quiz</li>
-                                <li>Assignment</li>
-                                <li>lecture-1</li>
-                                <li>lecture-2</li>
-                                <li>lecture-3</li>
-                                <li>lecture-4</li>
-                                <li>lecture-5</li>
-                                <li>lecture-6</li>
-                                <li>lecture-7</li>
-                                <li>lecture-8</li>
-                                <li>lecture-9</li>
-                                <li>lecture-10</li>
-                            </ul>
-                        </li>
-                        <li class="dynamicList"><i class="fa fa-caret-right clickme"></i>ENGINEERING GRAPHICS
-                            <ul class="course-components">
-                                <li>Participants</li>
-                                <li>Badges</li>
-                                <li>Competencies</li>
-                                <li>Grades</li>
-                                <li>Notice Section</li>
-                                <li>Online Quiz</li>
-                                <li>Assignment</li>
-                                <li>lecture-1</li>
-                                <li>lecture-2</li>
-                                <li>lecture-3</li>
-                                <li>lecture-4</li>
-                                <li>lecture-5</li>
-                                <li>lecture-6</li>
-                                <li>lecture-7</li>
-                                <li>lecture-8</li>
-                                <li>lecture-9</li>
-                                <li>lecture-10</li>
-                            </ul>
-                        </li>
-                        
-                     </ul> 
-                </div>
-
-
-
-
-            </div>
-
-            <div class="leftbox2">
-
-            </div>
-
-            <div class="leftbox3">
-
-            </div>
-            <!-- first left box ends -->
-
-
-
-            <!-- left box 2 starts -->
-            <div class="leftBox2">
-
-
-                <div id="lb2ImpLinks" class="lb2">Important Links</div>
-
-
-                <ul class="lb2Ul">
-                    <li class="lb2">BITS Website</li>
-                    <li class="lb2">AUGS/AGSR</li>
-                    <li class="lb2">SWD Website</li>
-                    <li class="lb2">Library Website</li>
-                    <li class="lb2">ERP</li>
-                    <li class="lb2">Student Achievements</li>
-                    <li class="lb2">Recorded Classroom Videos</li>
-                </ul>
-
-            </div>
-
-
-            <!-- leftbox 2 ends here -->
-
-            <!-- leftbox3 starts -->
-            <div class="leftBox3">
-
-                <div id="lb3Events" class="lb3">Events</div>
-
-
-                <ul class="lb3Ul">
-                    <li class="lb3">BOSM</li>
-                    <li class="lb3">OASIS</li>
-                    <li class="lb3">Seminars & Workshops</li>
-                </ul>
-
-            </div>
-
-            <!-- lb 3 ends  -->
         </div>
 
-        <!-- lb ends  -->
+        <div class="centerBox">
 
-
-
-        <!-- the most important part of the page will come here -->
-
-
-
-
-
-
-        <div class="centerContainer">
-
-
-
-            <!-- html recent courses -->
-            <div class="recentConatainer">
-
-                <div class="rcHead">
-
-                    <div class="rcHead1">
-                        Recently accessed courses
-                    </div>
-
-                    <div class="rcHead2">
-                        <button id="btn1">
-                            < </button>
-                                <button id="btn2">></button>
-
-                    </div>
-                </div>
-
-
-                <div class="courseContainer">
-
-
-                    <div class="courseCard">
-                        <div class="logoImg1">
-
-
-                        </div>
-
-                        <div class="semDetails">
-                            II SEM 2020-2021 (March SEM)
-                        </div>
-
-                        <div class="courseName">
-                           MORDERN NUCLEAR PHYSICS
-                        </div>
-
-
-                    </div>
-
-
-                    <div class="courseCard">
-                        <div class="logoImg2">
-
-
-                        </div>
-
-                        <div class="semDetails">
-                            II SEM 2020-2021 (March SEM)
-                        </div>
-
-                        <div class="courseName">
-                            APPLIED MATHEMATICS
-                        </div>
-
-
-                    </div>
-
-
-                </div>
+            <div class="recentContainer">
+                <h3>Recently Accessed Courses</h3>
+                <div id="recent"></div>
             </div>
 
-            <!-- html recent courses end here -->
+            <div class="rootContainer">
+                <h3>Course Overview</h3>
+                <select id="cards-dd" onchange="viewDropdown(this.value)">
+                    <option value="1">CARDS VIEW</option>
+                    <option value="2">LIST VIEW</option>
+
+                </select>
+                <div id="root"></div>
 
 
-            <!-- all courses start here  -->
-            <div class="outerWrapper">
+
+      
 
 
 
-                <div class="courseHeader">
 
-                    Course overview
+
+            </div><!---End div for root container-->
+            <div class="inputBox">
+                <div class="input1">
+                    <input id="input1Sem" type="text" placeholder="Enter The Semester Name">
                 </div>
-
-
-
-               
-
-                    <div class="dropdownForCards">
-                       
-                      <!--  <div class="ddcbtn1">
-                            <button id="dropcourse1">CARDS VIEW</button>
-                        </div>
-                        <div class="ddcbtn2">
-                            <button id="dropcourse2">LIST VIEW</button>
-                        </div>-->
-
-                        <select id="cards-dd" onchange="viewDropdown(this.value)">
-                            <option value="1">CARDS VIEW</option>
-                            <option value="2">LIST VIEW</option>
-
-                        </select>
-                     
-                    </div>
-
-
-               
-
-
-                <div class="flexboxForCourses">
-
-
-
-                    <div class="layer1 layer">
-                      
-                       
-                        <div class="logoImg3 logoImgCommon"></div>
-                        <div class="inputSem">
-                            II SEM 2020-2021 (March SEM)
-                        </div>
-
-                        <div class="inputName">
-                            GENERAL CHEMISTRY
-                        </div>
-                       
-                    </div>
-                    <div class="layer2 layer">
-                        <div class="logoImg4 logoImgCommon"></div>
-                        <div class="inputSem">
-                            II SEM 2020-2021 (March SEM)
-                        </div>
-                        <div class="inputName">
-                            ADVANCED CALCULUS
-                        </div>
-                    </div>
-                    <div class="layer3 layer">
-                        <div class="logoImg5 logoImgCommon"></div>
-                        <div class="inputSem">
-                            II SEM 2020-2021 (March SEM)
-                        </div>
-                        <div class="inputName">
-                            ELECTRICAL SCIENCES
-                        </div>
-                    </div>
-                    <div class="layer4 layer">
-                        <div class="logoImg6 logoImgCommon"></div>
-                        <div class="inputSem">
-                            II SEM 2020-2021 (March SEM)
-                        </div>
-                        <div class="inputName">
-                            C PROGRAMMING
-                        </div>
-                    </div>
-                    <div class="layer5 layer">
-                        <div class="logoImg7 logoImgCommon"></div>
-                        <div class="inputSem">
-                            II SEM 2020-2021 (March SEM)
-                        </div>
-                        <div class="inputName">
-                            GENERAL BIOLOGY
-                        </div>
-                    </div>
-                    <div class="layer6 layer">
-                        <div class="logoImg8 logoImgCommon"></div>
-                        <div class="inputSem">
-                            II SEM 2020-2021 (March SEM)
-                        </div>
-                        <div class="inputName">
-                            ENGINEERING GRAPHICS
-                        </div>
-                    </div>
-
-
-                    <div class="layer7 layer">
-                        <div id="cloneToBe">
-                            <div class="logoImg9 logoImgCommon"></div>
-                            <div class="inputSem" id="textSem">
-                                II SEM 2020-2021 (March SEM)
-                            </div>
-                            <div class="inputName" id="textCourse">
-                                ENGINEERING GRAPHICS
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div id="target1" >
-
-                    </div>
-
-
-
-
+                <div class="input2">
+                    <input id="input2Course" type="text" placeholder="Enter The Course Name">
                 </div>
-
-                <div class="footer">
-
-
-
-                    <div class="footer1">
-                        <div class="ft1">
-                            <input type="text" id="input1" placeholder="Enter The Course Name">
-                        </div>
-                        <div class="ft2">
-                            <input type="text" id="input2" placeholder="Enter Semester Details">
-                        </div>
-                    </div>
-
-                    <div class="footer2">
-                        <div class="ft3">
-                            <button id="btn11">Add Course</button>
-                        </div>
-                        <div class="ft4">
-                            <button id="btn22">Remove Course</button>
-                        </div>
-                    </div>
-
-
-                </div>
-
-
-                <div class="announcementBox">
-
-
-                    <div class="announceWrapper">
-
-                      <input type="text" id="announceInput" placeholder="Make Announcement !">
-                    </div>
-
-                </div>
-
-                <div id="makeAnnouncement"> <button id="makeAnncmnt">Make Announcement</button></div>
-
-
-
+            </div>
+                
+            <div class="btnBox">
+                <div class="btn1"><button id="add">Add The Course</button></div>
+                <div class="btn2"><button id="remove">Remove The Course</button></div>
             </div>
 
 
-<!--               here we will add html for the dynamic boiler   plate  -->
+
+
+
+
+
+            
+        </div><!---End div for center box-->
+        <!-------Dynamic Template-->
+               <div class="centerBox2">
+                   <!--               here we will add html for the dynamic boiler   plate  -->
                 
-                
+                   <div class="containerForTopMenu">
+
+                    <div id="topMenu1">
+                        Dashboard /
+                    </div>
+            
+            
+                    <div id="topMenu2">
+                        My Courses /
+                    </div>
+            
+            
+                    <div  id="topMenu3">
+            
+                    </div>
+            
+            
+                </div>
                 
                 <div class="onClickOfCard">
 
-                <div class="onClickOfCard1 oncc">
-
-                    <div class="onccWrapper">
-
-                        <h3><i class="fas fa-comments"></i> Announcements</h3>
-                    <button id="goBackToMainPage">  <i class="fas fa-arrow-left"></i> Go Back</button>
+                    <div class="onClickOfCard1 oncc">
+    
+                        <div class="onccWrapper">
+    
+                            <h3><i class="fas fa-comments"></i> Announcements</h3>
+                        <button id="goBackToMainPage">  <i class="fas fa-arrow-left"></i> Go Back</button>
+                        </div>
+                
                     </div>
             
+                    <hr>
+    
+                    <div class="onClickOfCard2 oncc">
+                        <h2>Online Quiz</h2>
+                    </div>
+    
+                    <hr>
+    
+                    <div class="onClickOfCard2 oncc">
+                        <h2>Assignment</h2>
+                    </div>
+    
+                    <hr>
+            
+                    <div class="onClickOfCard4 oncc">
+            
+                        <h2>Lecture-1</h2>
+                    </div>
+            
+                    <hr>
+            
+                    <div class="onClickOfCard5 oncc">
+            
+                        <h2>Lecture-2</h2>
+                    </div>
+            
+                    <hr>
+            
+                    <div class="onClickOfCard6 oncc">
+            
+                        <h2>Lecture-3</h2>
+                    </div>
+            
+                    <hr>
+            
+                    <div class="onClickOfCard7 oncc">
+            
+                        <h2>Lecture-4</h2>
+                    </div>
+            
+                    <hr>
+            
+                    <div class="onClickOfCard8 oncc">
+            
+                        <h2>Lecture-5</h2>
+                    </div>
+            
+                    <hr>
+            
+                    <div class="onClickOfCard9 oncc">
+            
+                        <h2>Lecture-6</h2>
+                    </div>
+            
+                    <hr>
+            
+                    <div class="onClickOfCard10 oncc">
+            
+                        <h2>Lecture-7</h2>
+                    </div>
+            
+                    <hr>
+            
+                    <div class="onClickOfCard1 oncc">
+            
+                        <h2>Lecture-8</h2>
+                    </div>
+            
+                    <hr>
+            
+                    <div class="onClickOfCard12 oncc">
+            
+                        <h2>Lecture-9</h2>
+                    </div>
+            
+                    <hr>
+            
+            
+            
+            
+            
+            <!--Attempt to make changes happen-->     
+            
+            
+            
+            
                 </div>
-        
-                <hr>
-
-                <div class="onClickOfCard2 oncc">
-                    <h2>Online Quiz</h2>
-                </div>
-
-                <hr>
-
-                <div class="onClickOfCard2 oncc">
-                    <h2>Assignment</h2>
-                </div>
-
-                <hr>
-        
-                <div class="onClickOfCard4 oncc">
-        
-                    <h2>Lecture-1</h2>
-                </div>
-        
-                <hr>
-        
-                <div class="onClickOfCard5 oncc">
-        
-                    <h2>Lecture-2</h2>
-                </div>
-        
-                <hr>
-        
-                <div class="onClickOfCard6 oncc">
-        
-                    <h2>Lecture-3</h2>
-                </div>
-        
-                <hr>
-        
-                <div class="onClickOfCard7 oncc">
-        
-                    <h2>Lecture-4</h2>
-                </div>
-        
-                <hr>
-        
-                <div class="onClickOfCard8 oncc">
-        
-                    <h2>Lecture-5</h2>
-                </div>
-        
-                <hr>
-        
-                <div class="onClickOfCard9 oncc">
-        
-                    <h2>Lecture-6</h2>
-                </div>
-        
-                <hr>
-        
-                <div class="onClickOfCard10 oncc">
-        
-                    <h2>Lecture-7</h2>
-                </div>
-        
-                <hr>
-        
-                <div class="onClickOfCard1 oncc">
-        
-                    <h2>Lecture-8</h2>
-                </div>
-        
-                <hr>
-        
-                <div class="onClickOfCard12 oncc">
-        
-                    <h2>Lecture-9</h2>
-                </div>
-        
-                <hr>
-        
-        
-        
-        
-        
-        <!--Attempt to make changes happen-->     
-        
-        
-        
-        
-            </div>
-        
-        
-
-
-                
-                
-                
-        </div>
-
-
-
-
-        <!-- html for right box -->
-
+            
+               </div>
+        <!------------->
 
         <div class="rightBox">
 
-            <div class="cale">
+            <div class="calendar">
                 <h3> Calendar</h3>
 
 
                 <div class="coverMeUp">
-                    <div class="calendar">
-                        <div class="month">
-                          <i class="fas fa-angle-left prev"></i>
-                          <div class="date">
-                            <h1></h1>
-                            <p></p>
-                          </div>
-                          <i class="fas fa-angle-right next"></i>
-                        </div>
-                        <div class="weekdays">
-                          <div>Sun</div>
-                          <div>Mon</div>
-                          <div>Tue</div>
-                          <div>Wed</div>
-                          <div>Thu</div>
-                          <div>Fri</div>
-                          <div>Sat</div>
-                        </div>
-                        <div class="days"></div>
-                      </div>         
+                    <iframe
+                        src="https://calendar.google.com/calendar/embed?height=300&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FKolkata&amp;src=cXUxa2lqOXVpMDdxYXQwNnM0OW01aDVjbzhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23D50000&amp;showTitle=0&amp;showNav=0&amp;showDate=1&amp;showPrint=0&amp;showTabs=0&amp;showTz=0&amp;showCalendars=0"
+                        style="border:solid 1px #777" width="220" height="300" frameborder="0" scrolling="no"></iframe>
+
 
 
                 </div>
@@ -745,48 +298,30 @@
                 <h4>No upcoming activities due</h4>
             </div>
 
-
-
-
-
-
-
-
             <div class="chatBox">
 
 
-            <h4> Announcements</h4>
+                <h4> Announcements</h4>
 
-           
+
                 <div class="icon">
                     <i class="fas fa-bell"></i>
                 </div>
 
+            </div>
 
-                <div id="chatList">
-                    <div class="chatListChild">No Announcements Yet </div>
 
-                    <div id="target2"></div>
-                </div>
+            <div class="stared">
 
+                <h4><i class="fas fa-star"></i> Stared Courses </h4>
+                
+                <ul id="staredList"></ul>
             </div>
         </div>
 
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    </div>
 
 
 
