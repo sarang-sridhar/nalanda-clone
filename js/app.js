@@ -8,12 +8,9 @@
 ////For top nav bar
 var username=sessionStorage.getItem("username");
 var userpic=sessionStorage.getItem("userpic");
-if(username='\0'){
-document.getElementById('user-name').innerHTML="username";
-}
-else{
+
     document.getElementById('user-name').innerHTML=username;
-}
+
 document.getElementById('user-pic').style.backgroundImage="url('"+userpic+"')";
 
 
@@ -79,10 +76,11 @@ function recentCourseGenerator(data){
 
 
                         </div>
-
+                               <div class="details">
                         <div class="semDetails"> ${courseData[i].SemDetails}</div>
                         
                         <div class="courseDetails"> ${courseData[i].courseName} </div>
+                        </div>
                     </div>`;
 
                     main.innerHTML+=card;
@@ -121,10 +119,11 @@ function cardGenerator(data){
            
                         </div>
                         
-
+                 <div class="details">
                  <div class="semDetails"> ${courseData[i].SemDetails}</div>        
 
                  <div class="courseDetails"> ${courseData[i].courseName} </div>
+                 </div>
                     </div>`;
 
 
@@ -139,8 +138,11 @@ let dropDownOnClick = document.getElementsByClassName('dropDownOnClick');
 let count = 0;
 
 
-
+function dropdownofeachcourse(){
     for(let i =0 ; i<dropDownOnClick.length ; i++){
+ dropDown = document.getElementsByClassName('dropdown');
+ dropDownOnClick = document.getElementsByClassName('dropDownOnClick');
+count =0;
 
         dropDown[i].addEventListener('mouseover', function () {
             count += 1;
@@ -158,7 +160,8 @@ let count = 0;
 
     }
 
-
+}
+dropdownofeachcourse();
 // console.log(dropDownOnClick);
 // console.log(dropDown);
 
@@ -315,9 +318,10 @@ addCourse.addEventListener('click' , function(){
                     <button class="delete">Remove Course</button>
                 </div>
             </div>
-            
+                        <div class="details">
                         <div class="semDetails"> ${input1Sem.value}</div>
                         <div class="courseDetails"> ${input2Course.value} </div>
+                        </div>
                     </div>`;
 
         
@@ -389,6 +393,8 @@ addCourse.addEventListener('click' , function(){
 
     coursecompreveal();//function to reveal coursecomp when clicked
     generateTemplate();//genrateTemplate if clicked
+    dropdownofeachcourse();//gerate the drop down of each course crad on mouse over
+    staranddelete(); //Add event listeners for star and delete
        /////
     }
 });
@@ -612,7 +618,7 @@ let containerForTopMenu = document.getElementsByClassName('containerForTopMenu')
 
 let onClickOfCard  =document.getElementsByClassName('onClickOfCard');
 
-let layer=document.getElementsByClassName('cardBox');
+let layer=document.getElementsByClassName('details');
 
 
 for(let i=0 ; i<layer.length;i++){
@@ -679,7 +685,7 @@ generateTemplate();
 
 
 
-
+function staranddelete(){
 let starMyCourse = document.getElementsByClassName('star');
 let staredList = document.getElementById('staredList');
 let courseDetails = document.getElementsByClassName('courseDetails');
@@ -690,7 +696,7 @@ for(let i=0 ; i<starMyCourse.length ; i++){
     starMyCourse[i].addEventListener('click' , function(){
 
 
-        staredList.innerHTML += `<li class="staredCourseName">${courseDetails[i].textContent}</li>`
+        staredList.innerHTML += `<li class="staredCourseName">${courseDetails[i+2].textContent}</li>`
 
     });
 }
@@ -708,3 +714,5 @@ for(let i = 0;i<deleteTheCourse.length ; i++){
 }
 
 })
+}
+staranddelete();
