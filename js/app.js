@@ -684,35 +684,51 @@ generateTemplate();
 // working on staring the course on click of a buttton 
 
 
-
-function staranddelete(){
-let starMyCourse = document.getElementsByClassName('star');
-let staredList = document.getElementById('staredList');
-let courseDetails = document.getElementsByClassName('courseDetails');
-// console.log(starMyCourse)
-
-
-for(let i=0 ; i<starMyCourse.length ; i++){
-    starMyCourse[i].addEventListener('click' , function(){
+function staranddelete() {
+    let starMyCourse = document.getElementsByClassName('star');
+    let staredList = document.getElementById('staredList');
+    let courseDetails = document.getElementsByClassName('courseDetails');
+    // console.log(starMyCourse)
 
 
-        staredList.innerHTML += `<li class="staredCourseName">${courseDetails[i+2].textContent}</li>`
-
-    });
-}
-
-// working on removing the course 
+    for (let i = 0; i < starMyCourse.length; i++) {
+        starMyCourse[i].addEventListener('click', function () {
 
 
-let deleteTheCourse = document.getElementsByClassName('delete');
+            staredList.innerHTML += `<li class="staredCourseName">${courseDetails[i + 2].textContent}</li>`
+
+        });
+    }
+
+    // working on removing the course 
 
 
-deleteTheCourse.addEventListener('click' ,function(){
-for(let i = 0;i<deleteTheCourse.length ; i++){
-
-    root.innerHTML -= card[i+2];
-}
-
-})
+ 
 }
 staranddelete();
+
+
+let makeAnnouncement = document.getElementById('makeAnnouncement');
+let announcementConatainer = document.getElementById('anContainer');
+let announcementHolder = document.getElementById('announcementHolder');
+let anBocAnnouncement = document.getElementById('anBocAnnouncement');
+let anBox = document.getElementsByClassName('anBox');
+
+makeAnnouncement.addEventListener('click' , function(){
+
+    anBox[0].style.display = 'flex';
+
+});
+
+goBackToMainPage.addEventListener('click' , function(){
+
+    anBox[0].style.display = 'none';
+    announcementHolder.value = '';
+
+});
+
+anBocAnnouncement.addEventListener('click' , function(){
+   
+
+    announcementConatainer.innerHTML += `<li id="ourAnnouncement">${announcementHolder.value}</li>`
+})
