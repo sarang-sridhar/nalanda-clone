@@ -11,7 +11,8 @@
 <link rel="stylesheet" href="../css/cards.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
-
+<link rel="stylesheet" href="../css/cal.css">
+<script src="../js/cal.js" defer></script>
 <body>
 
 
@@ -248,17 +249,27 @@
 
             <div class="calendar">
                 <h3> Calendar</h3>
+                
+                <div class="month">
+                    <i class="fas fa-angle-left prev"></i>
+                    <div class="date">
+                      <h1></h1>
+                      <p></p>
+                    </div>
+                    <i class="fas fa-angle-right next"></i>
+                  </div>
+                  <div class="weekdays">
+                    <div>Sun</div>
+                    <div>Mon</div>
+                    <div>Tue</div>
+                    <div>Wed</div>
+                    <div>Thu</div>
+                    <div>Fri</div>
+                    <div>Sat</div>
+                  </div>
+                  <div class="days"></div>
 
-
-                <div class="coverMeUp">
-                    <iframe
-                        src="https://calendar.google.com/calendar/embed?height=300&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=Asia%2FKolkata&amp;src=cXUxa2lqOXVpMDdxYXQwNnM0OW01aDVjbzhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23D50000&amp;showTitle=0&amp;showNav=0&amp;showDate=1&amp;showPrint=0&amp;showTabs=0&amp;showTz=0&amp;showCalendars=0"
-                        style="border:solid 1px #777" width="220" height="300" frameborder="0" scrolling="no"></iframe>
-
-
-
-                </div>
-
+            
 
             </div>
 
@@ -267,7 +278,7 @@
 
                 <h3 id="ueHead">Upcoming Events</h3>
 
-                <p>There are no upcoming events</p>
+                <div id="holidays"></div>
 
             </div>
 

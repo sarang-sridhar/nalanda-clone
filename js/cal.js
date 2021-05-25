@@ -80,3 +80,26 @@ document.querySelector(".next").addEventListener("click", () => {
 });
 
 renderCalendar();
+
+curMonth = date.getMonth() + 1;
+
+const url = `https://holidays.abstractapi.com/v1/?api_key=c1d90e43811646c584e87ab524cef07e&country=IN&year=2020&month=${curMonth}`;
+
+
+
+fetch(url)
+.then(response => response.json())
+  .then(data => {
+    data = data.filter(a => a.type == 'National');
+    console.log(data);
+    data.forEach(holidays);
+  });
+
+  function holidays(data)
+  {
+    const container = document.getElementById("holidays");
+    const div = document.createElement('div');
+    div.innerHTML = `${data.name}:  ${data.date}`;
+    div.classList.add("holiday");
+    container.append(div);
+  }

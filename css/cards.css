@@ -302,20 +302,10 @@ i{
 
 
 .calendar{
-    margin-bottom: 20px  ;
-    padding: 10px;
     border: 1px solid gainsboro;
-    width: 230px;
+    width: 250px;
 }
 
-.coverMeUp{
-    margin-top: 20px;
-    width: 220px;
-    height: 275px;
-    background-color: white;
-    overflow: hidden;
-   
-}
 .upcomingEvents{
     border: 1px solid gainsboro;
     padding: 10px;
