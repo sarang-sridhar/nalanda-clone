@@ -650,6 +650,7 @@ for(let i=0 ; i<layer.length;i++){
        document.getElementsByClassName('centerBox')[0].style.display="none";
        document.getElementsByClassName('centerBox2')[0].style.display="block";
        topMenu3.innerText = document.getElementsByClassName('courseDetails')[i].innerText;
+     //  sessionStorage.set("cfa",topMenu3.innerText);
        ////Make Left side drop down on clicking a particular course
           
        for(let j=0;j<coursecomp.length;j++){      //clearing any clicked course on the left side
@@ -756,6 +757,7 @@ staranddelete();
 let makeAnnouncement = document.getElementById('makeAnnouncement');
 let announcementConatainer = document.getElementById('anContainer');
 let announcementHolder = document.getElementById('announcementHolder');
+let announcementMaker=document.getElementById('announcementMaker');
 let anBocAnnouncement = document.getElementById('anBocAnnouncement');
 let anBox = document.getElementsByClassName('anBox');
 
@@ -774,6 +776,13 @@ goBackToMainPage.addEventListener('click' , function(){
 
 anBocAnnouncement.addEventListener('click' , function(){
    
-
-    announcementConatainer.innerHTML += `<li id="ourAnnouncement">${announcementHolder.value}</li>`
+    //var abc=sessionStorage.get("cfa");
+    announcementConatainer.innerHTML += `<li id="ourAnnouncement">
+    <h4>Announcement from ${announcementMaker.value}:</h4>
+    <ul>
+   <li> ${announcementHolder.value}</li>
+   </ul>
+    </li>`
+    announcementMaker.value="";
+    announcementHolder.value="";
 })

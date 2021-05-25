@@ -400,6 +400,8 @@ i{
     border: 1px solid gainsboro;
     margin: 20px 0;
     display: none;
+    height:auto;
+    padding:10px;
 }
 
 .anBox1 , .anBox2{
@@ -414,11 +416,12 @@ i{
 .anBox2{
     display: flex;
     justify-content: center;
+    margin-top:20px;
 }
 .anBox2 button{
     height: 30px;
     width: 40%;
-    margin:  0 auto;
+    margin:  10px auto;
     background-color: #464646;
     border: none;
     color: white;
